@@ -1,0 +1,915 @@
+<div class="space-y-12">
+    <!-- Intro Section -->
+    <div class="bg-white rounded-xl shadow-md p-6">
+        <div class="border-l-4 brand-border pl-4 mb-8">
+            <h2 class="text-2xl font-bold text-gray-800 mb-4">Roadmap di Sviluppo - 5 Giorni Lavorativi</h2>
+            <p class="text-gray-600">
+                Il progetto segue una strategia di sviluppo strutturata in cinque giornate lavorative.
+                Questo approccio consente una delivery rapida del convertitore XML → IMPPN TeamSystem,
+                garantendo al cliente Medlight uno strumento desktop autonomo per Windows, senza canoni mensili cloud,
+                installabile su più postazioni contemporaneamente.
+            </p>
+        </div>
+
+        <!-- Roadmap Timeline -->
+        <div class="relative flex justify-between mt-12 mb-8">
+            <div class="absolute top-1/2 w-full h-1 bg-gray-200 -translate-y-1/2"></div>
+
+            <div class="relative z-10">
+                <div class="w-10 h-10 bg-blue-500 rounded-full flex items-center justify-center mb-2" style="margin: auto; margin-bottom: 8px;">
+                    <span class="material-symbols-outlined text-white text-sm">handshake</span>
+                </div>
+                <div class="text-center">
+                    <div class="font-semibold text-sm">Kick-off</div>
+                    <div class="text-xs text-gray-500">Analisi & Setup</div>
+                </div>
+            </div>
+
+            <div class="relative z-10">
+                <div class="w-10 h-10 bg-gray-200 rounded-full flex items-center justify-center mb-2" style="margin: auto; margin-bottom: 8px;">
+                    <span class="material-symbols-outlined text-yellow-700 text-sm">looks_one</span>
+                </div>
+                <div class="text-center">
+                    <div class="font-semibold text-sm">Giorno 1</div>
+                    <div class="text-xs text-gray-500">Parser XML</div>
+                </div>
+            </div>
+
+            <div class="relative z-10">
+                <div class="w-10 h-10 bg-gray-200 rounded-full flex items-center justify-center mb-2" style="margin: auto; margin-bottom: 8px;">
+                    <span class="material-symbols-outlined text-yellow-700 text-sm">looks_two</span>
+                </div>
+                <div class="text-center">
+                    <div class="font-semibold text-sm">Giorno 2</div>
+                    <div class="text-xs text-gray-500">Generatore IMPPN</div>
+                </div>
+            </div>
+
+            <div class="relative z-10">
+                <div class="w-10 h-10 bg-gray-200 rounded-full flex items-center justify-center mb-2" style="margin: auto; margin-bottom: 8px;">
+                    <span class="material-symbols-outlined text-yellow-700 text-sm">looks_3</span>
+                </div>
+                <div class="text-center">
+                    <div class="font-semibold text-sm">Giorno 3</div>
+                    <div class="text-xs text-gray-500">Interfaccia Desktop</div>
+                </div>
+            </div>
+
+            <div class="relative z-10">
+                <div class="w-10 h-10 bg-gray-200 rounded-full flex items-center justify-center mb-2" style="margin: auto; margin-bottom: 8px;">
+                    <span class="material-symbols-outlined text-yellow-700 text-sm">looks_4</span>
+                </div>
+                <div class="text-center">
+                    <div class="font-semibold text-sm">Giorno 4</div>
+                    <div class="text-xs text-gray-500">Test & Validazione</div>
+                </div>
+            </div>
+
+            <div class="relative z-10">
+                <div class="w-10 h-10 bg-gray-200 rounded-full flex items-center justify-center mb-2" style="margin: auto; margin-bottom: 8px;">
+                    <span class="material-symbols-outlined text-yellow-700 text-sm">looks_5</span>
+                </div>
+                <div class="text-center">
+                    <div class="font-semibold text-sm">Giorno 5</div>
+                    <div class="text-xs text-gray-500">Packaging & Deploy</div>
+                </div>
+            </div>
+
+            <div class="relative z-10">
+                <div class="w-10 h-10 bg-purple-500 rounded-full flex items-center justify-center mb-2" style="margin: auto; margin-bottom: 8px;">
+                    <span class="material-symbols-outlined text-white text-sm">fact_check</span>
+                </div>
+                <div class="text-center">
+                    <div class="font-semibold text-sm">Delivery</div>
+                    <div class="text-xs text-gray-500">Consegna Finale</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Analisi Formato Sorgente -->
+    <div class="bg-white rounded-xl shadow-md p-6">
+        <div class="flex items-center mb-6">
+            <div class="flex items-center justify-center w-12 h-12 bg-brand rounded-xl mr-4">
+                <span class="material-icons-outlined text-2xl text-gray-900">compare</span>
+            </div>
+            <div>
+                <h3 class="text-lg font-semibold text-yellow-800">Analisi Formati Sorgente Xmed</h3>
+                <p class="text-gray-600 mt-1">Valutazione dei formati di esportazione disponibili dal gestionale Xmed</p>
+            </div>
+        </div>
+
+        <div class="grid grid-cols-2 gap-6 mb-6">
+            <!-- Formato XML Xmed -->
+            <div class="bg-green-50 rounded-lg p-4 border-2 border-green-400">
+                <div class="flex items-center mb-3">
+                    <span class="material-icons-outlined text-green-600 mr-2">check_circle</span>
+                    <h4 class="font-medium text-green-800">XML Export Xmed (RACCOMANDATO)</h4>
+                </div>
+                <ul class="space-y-2 text-gray-600 text-sm">
+                    <li class="flex items-start">
+                        <span class="material-icons-outlined text-green-500 text-sm mr-2">add</span>
+                        Export multi-fattura in un unico file
+                    </li>
+                    <li class="flex items-start">
+                        <span class="material-icons-outlined text-green-500 text-sm mr-2">add</span>
+                        Struttura semplificata e ben organizzata
+                    </li>
+                    <li class="flex items-start">
+                        <span class="material-icons-outlined text-green-500 text-sm mr-2">add</span>
+                        Contiene tutti i dati necessari: cliente, fattura, righe, IVA, pagamento
+                    </li>
+                    <li class="flex items-start">
+                        <span class="material-icons-outlined text-green-500 text-sm mr-2">add</span>
+                        Dati Sistema Tessera Sanitaria inclusi
+                    </li>
+                    <li class="flex items-start">
+                        <span class="material-icons-outlined text-green-500 text-sm mr-2">add</span>
+                        Parsing più rapido e meno soggetto a errori
+                    </li>
+                </ul>
+                <div class="mt-4 p-2 bg-green-100 rounded text-sm text-green-800">
+                    <strong>Dati disponibili:</strong> Numero/Data fattura, Anagrafica cliente completa (CF, indirizzo),
+                    Righe dettaglio (categoria, descrizione, importo, regime IVA), Bollo, Totale, Pagamento (data, tipo, IBAN)
+                </div>
+            </div>
+
+            <!-- Formato FatturaPA -->
+            <div class="bg-gray-50 rounded-lg p-4 border border-gray-200">
+                <div class="flex items-center mb-3">
+                    <span class="material-icons-outlined text-gray-500 mr-2">description</span>
+                    <h4 class="font-medium text-gray-700">XML FatturaPA (SDI)</h4>
+                </div>
+                <ul class="space-y-2 text-gray-600 text-sm">
+                    <li class="flex items-start">
+                        <span class="material-icons-outlined text-blue-500 text-sm mr-2">add</span>
+                        Formato standard Agenzia delle Entrate
+                    </li>
+                    <li class="flex items-start">
+                        <span class="material-icons-outlined text-blue-500 text-sm mr-2">add</span>
+                        Dati fiscali completi e validati
+                    </li>
+                    <li class="flex items-start">
+                        <span class="material-icons-outlined text-orange-500 text-sm mr-2">remove</span>
+                        Un file per ogni fattura (gestione multi-file)
+                    </li>
+                    <li class="flex items-start">
+                        <span class="material-icons-outlined text-orange-500 text-sm mr-2">remove</span>
+                        Struttura XML più complessa (namespace, schemi XSD)
+                    </li>
+                    <li class="flex items-start">
+                        <span class="material-icons-outlined text-orange-500 text-sm mr-2">remove</span>
+                        Parsing più laborioso
+                    </li>
+                </ul>
+                <div class="mt-4 p-2 bg-gray-100 rounded text-sm text-gray-600">
+                    <strong>Alternativa valida</strong> se servono dati aggiuntivi non presenti nell'export Xmed standard
+                </div>
+            </div>
+        </div>
+
+        <div class="bg-yellow-50 p-4 rounded-lg border border-yellow-200">
+            <h5 class="font-medium text-yellow-800 flex items-center mb-2">
+                <span class="material-icons-outlined text-yellow-700 mr-2 text-sm">lightbulb</span>
+                Raccomandazione Tecnica
+            </h5>
+            <p class="text-gray-700 text-sm">
+                Si consiglia di utilizzare il <strong>formato XML Export Xmed</strong> come sorgente primaria.
+                Questo formato contiene tutte le informazioni necessarie per generare il tracciato IMPPN TeamSystem
+                per fatture di vendita con incasso contestuale (tipologia professionista/studio medico).
+                La struttura semplificata riduce i tempi di sviluppo e minimizza il rischio di errori di mapping.
+            </p>
+        </div>
+    </div>
+
+    <!-- Mapping Dati -->
+    <div class="bg-white rounded-xl shadow-md p-6">
+        <div class="flex items-center mb-6">
+            <div class="flex items-center justify-center w-12 h-12 bg-brand rounded-xl mr-4">
+                <span class="material-icons-outlined text-2xl text-gray-900">sync_alt</span>
+            </div>
+            <div>
+                <h3 class="text-lg font-semibold text-yellow-800">Mapping Dati Xmed → IMPPN TeamSystem</h3>
+                <p class="text-gray-600 mt-1">Corrispondenza campi per fattura di vendita con incasso contestuale</p>
+            </div>
+        </div>
+
+        <div class="overflow-x-auto">
+            <table class="w-full text-sm">
+                <thead>
+                    <tr class="bg-gray-100">
+                        <th class="text-left p-3 font-medium text-gray-700">Campo Xmed</th>
+                        <th class="text-left p-3 font-medium text-gray-700">Campo IMPPN</th>
+                        <th class="text-left p-3 font-medium text-gray-700">Posizione</th>
+                        <th class="text-left p-3 font-medium text-gray-700">Note</th>
+                    </tr>
+                </thead>
+                <tbody class="divide-y divide-gray-200">
+                    <tr>
+                        <td class="p-3 text-gray-600">(configurazione)</td>
+                        <td class="p-3 font-mono text-blue-600">TRF-DITTA</td>
+                        <td class="p-3 text-gray-500">1-5</td>
+                        <td class="p-3 text-gray-500">Codice ditta MULTI (parametro)</td>
+                    </tr>
+                    <tr class="bg-gray-50">
+                        <td class="p-3 text-gray-600">client/name</td>
+                        <td class="p-3 font-mono text-blue-600">TRF-RASO</td>
+                        <td class="p-3 text-gray-500">13-44</td>
+                        <td class="p-3 text-gray-500">Ragione sociale cliente</td>
+                    </tr>
+                    <tr>
+                        <td class="p-3 text-gray-600">client/address</td>
+                        <td class="p-3 font-mono text-blue-600">TRF-IND</td>
+                        <td class="p-3 text-gray-500">45-74</td>
+                        <td class="p-3 text-gray-500">Indirizzo</td>
+                    </tr>
+                    <tr class="bg-gray-50">
+                        <td class="p-3 text-gray-600">client/zipcode</td>
+                        <td class="p-3 font-mono text-blue-600">TRF-CAP</td>
+                        <td class="p-3 text-gray-500">75-79</td>
+                        <td class="p-3 text-gray-500">CAP</td>
+                    </tr>
+                    <tr>
+                        <td class="p-3 text-gray-600">client/town</td>
+                        <td class="p-3 font-mono text-blue-600">TRF-CITTA</td>
+                        <td class="p-3 text-gray-500">80-104</td>
+                        <td class="p-3 text-gray-500">Città</td>
+                    </tr>
+                    <tr class="bg-gray-50">
+                        <td class="p-3 text-gray-600">client/province</td>
+                        <td class="p-3 font-mono text-blue-600">TRF-PROV</td>
+                        <td class="p-3 text-gray-500">105-106</td>
+                        <td class="p-3 text-gray-500">Provincia</td>
+                    </tr>
+                    <tr>
+                        <td class="p-3 text-gray-600">client/tax_code</td>
+                        <td class="p-3 font-mono text-blue-600">TRF-COFI</td>
+                        <td class="p-3 text-gray-500">107-122</td>
+                        <td class="p-3 text-gray-500">Codice Fiscale</td>
+                    </tr>
+                    <tr class="bg-gray-50">
+                        <td class="p-3 text-gray-600">date</td>
+                        <td class="p-3 font-mono text-blue-600">TRF-DATA-DOC</td>
+                        <td class="p-3 text-gray-500">380-387</td>
+                        <td class="p-3 text-gray-500">Data documento (ggmmaaaa)</td>
+                    </tr>
+                    <tr>
+                        <td class="p-3 text-gray-600">number</td>
+                        <td class="p-3 font-mono text-blue-600">TRF-NDOC</td>
+                        <td class="p-3 text-gray-500">396-400</td>
+                        <td class="p-3 text-gray-500">Numero documento</td>
+                    </tr>
+                    <tr class="bg-gray-50">
+                        <td class="p-3 text-gray-600">invoice_item/amount</td>
+                        <td class="p-3 font-mono text-blue-600">TRF-IMPONIB</td>
+                        <td class="p-3 text-gray-500">475-486</td>
+                        <td class="p-3 text-gray-500">Imponibile (centesimi)</td>
+                    </tr>
+                    <tr>
+                        <td class="p-3 text-gray-600">vat_regime → aliquota</td>
+                        <td class="p-3 font-mono text-blue-600">TRF-ALIQ</td>
+                        <td class="p-3 text-gray-500">487-489</td>
+                        <td class="p-3 text-gray-500">Aliquota IVA o cod. esenzione</td>
+                    </tr>
+                    <tr class="bg-gray-50">
+                        <td class="p-3 text-gray-600">vat</td>
+                        <td class="p-3 font-mono text-blue-600">TRF-IMPOSTA</td>
+                        <td class="p-3 text-gray-500">495-505</td>
+                        <td class="p-3 text-gray-500">Imposta (centesimi)</td>
+                    </tr>
+                    <tr>
+                        <td class="p-3 text-gray-600">total</td>
+                        <td class="p-3 font-mono text-blue-600">TRF-TOT-FATT</td>
+                        <td class="p-3 text-gray-500">723-734</td>
+                        <td class="p-3 text-gray-500">Totale fattura (centesimi)</td>
+                    </tr>
+                    <tr class="bg-gray-50">
+                        <td class="p-3 text-gray-600">payment_type</td>
+                        <td class="p-3 font-mono text-blue-600">TRF-CONTO(2)</td>
+                        <td class="p-3 text-gray-500">973+</td>
+                        <td class="p-3 text-gray-500">Conto incasso (cassa/banca)</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <!-- Analisi Descrizioni per Conti Contabili -->
+    <div class="bg-white rounded-xl shadow-md p-6">
+        <div class="flex items-center mb-6">
+            <div class="flex items-center justify-center w-12 h-12 bg-brand rounded-xl mr-4">
+                <span class="material-icons-outlined text-2xl text-gray-900">manage_search</span>
+            </div>
+            <div>
+                <h3 class="text-lg font-semibold text-yellow-800">Analisi Intelligente delle Descrizioni</h3>
+                <p class="text-gray-600 mt-1">Assegnazione automatica dei conti contabili tramite parole chiave</p>
+            </div>
+        </div>
+
+        <div class="bg-orange-50 p-4 rounded-lg border border-orange-200 mb-6">
+            <h5 class="font-medium text-orange-800 flex items-center mb-3">
+                <span class="material-icons-outlined text-orange-700 mr-2 text-sm">info</span>
+                Requisito Funzionale Critico
+            </h5>
+            <p class="text-gray-700 text-sm mb-3">
+                Oltre ai dati standard presenti nelle fatture (regime IVA, modalità di pagamento, importi),
+                il programma di conversione dovrà effettuare un'<strong>analisi semantica del testo della descrizione</strong>
+                di ogni riga fattura per identificare parole chiave specifiche e associare automaticamente
+                il ricavo al conto contabile appropriato.
+            </p>
+            <p class="text-gray-700 text-sm">
+                La mappatura tra parole chiave e conti contabili <strong>verrà concordata con Studio Alcidi & Partners
+                in fase di sviluppo</strong>, in modo da riflettere esattamente il piano dei conti utilizzato per Medlight.
+            </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div class="p-4 bg-blue-50 rounded-lg border border-blue-200">
+                <h4 class="font-medium text-blue-800 mb-3 flex items-center">
+                    <span class="material-icons-outlined text-blue-700 mr-2">text_snippet</span>
+                    Esempi di Parole Chiave
+                </h4>
+                <ul class="space-y-2 text-sm text-blue-700">
+                    <li class="flex items-start">
+                        <span class="material-icons-outlined text-blue-600 text-sm mr-2">label</span>
+                        <div><strong>"cosmetica"</strong>, <strong>"estetica"</strong> → Conto ricavi estetici</div>
+                    </li>
+                    <li class="flex items-start">
+                        <span class="material-icons-outlined text-blue-600 text-sm mr-2">label</span>
+                        <div><strong>"vendita prodotto"</strong> → Conto vendita merci</div>
+                    </li>
+                    <li class="flex items-start">
+                        <span class="material-icons-outlined text-blue-600 text-sm mr-2">label</span>
+                        <div><strong>"visita"</strong>, <strong>"consulto"</strong> → Conto prestazioni mediche</div>
+                    </li>
+                    <li class="flex items-start">
+                        <span class="material-icons-outlined text-blue-600 text-sm mr-2">label</span>
+                        <div><strong>"chirurgia"</strong>, <strong>"intervento"</strong> → Conto prestazioni chirurgiche</div>
+                    </li>
+                    <li class="flex items-start">
+                        <span class="material-icons-outlined text-blue-600 text-sm mr-2">label</span>
+                        <div><strong>"laser"</strong> → Conto trattamenti laser</div>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="p-4 bg-green-50 rounded-lg border border-green-200">
+                <h4 class="font-medium text-green-800 mb-3 flex items-center">
+                    <span class="material-icons-outlined text-green-700 mr-2">settings_suggest</span>
+                    Funzionalità Previste
+                </h4>
+                <ul class="space-y-2 text-sm text-green-700">
+                    <li class="flex items-start">
+                        <span class="material-icons-outlined text-green-600 text-sm mr-2">check_circle</span>
+                        Tabella configurabile parole chiave → conto contabile
+                    </li>
+                    <li class="flex items-start">
+                        <span class="material-icons-outlined text-green-600 text-sm mr-2">check_circle</span>
+                        Ricerca case-insensitive e parziale nelle descrizioni
+                    </li>
+                    <li class="flex items-start">
+                        <span class="material-icons-outlined text-green-600 text-sm mr-2">check_circle</span>
+                        Priorità regole (prima parola chiave trovata vince)
+                    </li>
+                    <li class="flex items-start">
+                        <span class="material-icons-outlined text-green-600 text-sm mr-2">check_circle</span>
+                        Conto di default per descrizioni non riconosciute
+                    </li>
+                    <li class="flex items-start">
+                        <span class="material-icons-outlined text-green-600 text-sm mr-2">check_circle</span>
+                        Report delle assegnazioni effettuate per verifica
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="mt-6 p-4 bg-yellow-50 rounded-lg border border-yellow-200">
+            <h5 class="font-medium text-yellow-800 flex items-center mb-2">
+                <span class="material-icons-outlined text-yellow-700 mr-2 text-sm">handshake</span>
+                Fase di Configurazione con Studio Alcidi
+            </h5>
+            <p class="text-gray-700 text-sm">
+                Durante lo sviluppo verrà organizzato un incontro con Studio Alcidi per definire:
+                la lista completa delle parole chiave da riconoscere, i codici dei conti contabili corrispondenti
+                nel piano dei conti di Medlight, eventuali regole speciali o eccezioni, e il conto di default
+                da utilizzare per le voci non classificabili automaticamente.
+            </p>
+        </div>
+    </div>
+
+    <!-- Piano di Sviluppo -->
+    <div class="bg-white rounded-xl shadow-md p-6 relative overflow-hidden">
+
+        <div class="flex items-center mb-8">
+            <div class="flex items-center justify-center w-12 h-12 bg-brand rounded-xl mr-4">
+                <span class="material-icons-outlined text-2xl text-gray-900">schedule</span>
+            </div>
+            <div>
+                <div class="flex items-center">
+                    <h3 class="text-lg font-semibold text-yellow-800">Piano di Sviluppo Dettagliato</h3>
+                    <span class="ml-4 px-3 py-1 bg-yellow-100 text-yellow-800 text-sm rounded-full">5 Giorni Lavorativi</span>
+                </div>
+                <p class="text-gray-600 mt-1">Implementazione convertitore XML → IMPPN per importazione fatture Xmed in TeamSystem</p>
+            </div>
+        </div>
+
+        <!-- Sezioni informative -->
+        <div class="grid grid-cols-2 gap-6 mb-8">
+            <div class="bg-gray-50 rounded-lg p-4 border border-gray-100">
+                <div class="flex items-center mb-3">
+                    <span class="material-icons-outlined text-[#FCD415] mr-2">warning</span>
+                    <h4 class="font-medium text-gray-800">Punti di Attenzione Critici</h4>
+                </div>
+                <ul class="space-y-2 text-gray-600">
+                    <li class="flex items-start">
+                        <span class="material-icons-outlined text-[#FCD415] text-sm mr-2">priority_high</span>
+                        Formattazione precisa campi a lunghezza fissa (7001 caratteri per record)
+                    </li>
+                    <li class="flex items-start">
+                        <span class="material-icons-outlined text-[#FCD415] text-sm mr-2">priority_high</span>
+                        Gestione corretta importi in centesimi con segno (+/-)
+                    </li>
+                    <li class="flex items-start">
+                        <span class="material-icons-outlined text-[#FCD415] text-sm mr-2">priority_high</span>
+                        Mapping codici IVA Xmed → codici esenzione TeamSystem
+                    </li>
+                    <li class="flex items-start">
+                        <span class="material-icons-outlined text-[#FCD415] text-sm mr-2">priority_high</span>
+                        Gestione bollo virtuale (importo escluso art.15)
+                    </li>
+                    <li class="flex items-start">
+                        <span class="material-icons-outlined text-[#FCD415] text-sm mr-2">priority_high</span>
+                        Analisi descrizioni per assegnazione conti contabili
+                    </li>
+                </ul>
+            </div>
+
+            <div class="bg-gray-50 rounded-lg p-4 border border-gray-100">
+                <div class="flex items-center mb-3">
+                    <span class="material-icons-outlined text-[#FCD415] mr-2">engineering</span>
+                    <h4 class="font-medium text-gray-800">Specifiche Tecniche Applicativo</h4>
+                </div>
+                <ul class="space-y-2 text-gray-600">
+                    <li class="flex items-start">
+                        <span class="material-icons-outlined text-[#FCD415] text-sm mr-2">desktop_windows</span>
+                        Applicativo desktop per Windows (.exe)
+                    </li>
+                    <li class="flex items-start">
+                        <span class="material-icons-outlined text-[#FCD415] text-sm mr-2">savings</span>
+                        Nessun canone cloud - installazione locale una tantum
+                    </li>
+                    <li class="flex items-start">
+                        <span class="material-icons-outlined text-[#FCD415] text-sm mr-2">devices</span>
+                        Installabile su più postazioni contemporaneamente
+                    </li>
+                    <li class="flex items-start">
+                        <span class="material-icons-outlined text-[#FCD415] text-sm mr-2">upload_file</span>
+                        Caricamento manuale file XML da parte dell'operatore
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Sprint Timeline -->
+        <div class="space-y-6">
+            <!-- Giorno 1: Parser XML -->
+            <div class="bg-white rounded-lg border border-gray-200 p-4 hover:shadow-md transition-shadow">
+                <div class="flex items-center justify-between mb-4">
+                    <div class="flex items-center">
+                        <span class="w-8 h-8 flex items-center justify-center bg-brand rounded-lg text-gray-900 font-medium mr-3">1</span>
+                        <h5 class="font-medium text-gray-800">Sviluppo Parser XML Xmed & Modello Dati</h5>
+                    </div>
+                    <span class="px-3 py-1 bg-yellow-100 text-yellow-800 text-sm rounded-full">Giorno 1</span>
+                </div>
+
+                <div class="grid grid-cols-2 gap-4">
+                    <div>
+                        <h6 class="text-sm font-medium text-gray-700 mb-2">Obiettivi</h6>
+                        <ul class="space-y-1">
+                            <li class="flex items-start text-sm text-gray-600">
+                                <span class="material-icons-outlined text-green-500 text-sm mr-1">check_circle</span>
+                                Implementazione parser XML per formato export Xmed
+                            </li>
+                            <li class="flex items-start text-sm text-gray-600">
+                                <span class="material-icons-outlined text-green-500 text-sm mr-1">check_circle</span>
+                                Definizione modello dati interno (Invoice, Client, InvoiceItem)
+                            </li>
+                            <li class="flex items-start text-sm text-gray-600">
+                                <span class="material-icons-outlined text-green-500 text-sm mr-1">check_circle</span>
+                                Gestione multi-fattura da singolo file XML
+                            </li>
+                            <li class="flex items-start text-sm text-gray-600">
+                                <span class="material-icons-outlined text-green-500 text-sm mr-1">check_circle</span>
+                                Validazione dati in ingresso e gestione errori
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h6 class="text-sm font-medium text-gray-700 mb-2">Deliverable Tecnici</h6>
+                        <ul class="space-y-1">
+                            <li class="flex items-start text-sm text-gray-600">
+                                <span class="material-icons-outlined text-blue-500 text-sm mr-1">build</span>
+                                Modulo XmedParser con lettura e validazione XML
+                            </li>
+                            <li class="flex items-start text-sm text-gray-600">
+                                <span class="material-icons-outlined text-blue-500 text-sm mr-1">build</span>
+                                Classi per modello dati fatture
+                            </li>
+                            <li class="flex items-start text-sm text-gray-600">
+                                <span class="material-icons-outlined text-blue-500 text-sm mr-1">build</span>
+                                Normalizzazione date (gg/mm/aaaa → ggmmaaaa)
+                            </li>
+                            <li class="flex items-start text-sm text-gray-600">
+                                <span class="material-icons-outlined text-blue-500 text-sm mr-1">build</span>
+                                Conversione importi da stringa (es. "82,00") a centesimi
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Giorno 2: Generatore IMPPN -->
+            <div class="bg-white rounded-lg border border-gray-200 p-4 hover:shadow-md transition-shadow">
+                <div class="flex items-center justify-between mb-4">
+                    <div class="flex items-center">
+                        <span class="w-8 h-8 flex items-center justify-center bg-brand rounded-lg text-gray-900 font-medium mr-3">2</span>
+                        <h5 class="font-medium text-gray-800">Generatore Tracciato IMPPN TeamSystem</h5>
+                    </div>
+                    <span class="px-3 py-1 bg-yellow-100 text-yellow-800 text-sm rounded-full">Giorno 2</span>
+                </div>
+
+                <div class="grid grid-cols-2 gap-4">
+                    <div>
+                        <h6 class="text-sm font-medium text-gray-700 mb-2">Obiettivi</h6>
+                        <ul class="space-y-1">
+                            <li class="flex items-start text-sm text-gray-600">
+                                <span class="material-icons-outlined text-green-500 text-sm mr-1">check_circle</span>
+                                Implementazione generatore tracciato TRAF2000 v3
+                            </li>
+                            <li class="flex items-start text-sm text-gray-600">
+                                <span class="material-icons-outlined text-green-500 text-sm mr-1">check_circle</span>
+                                Formattazione campi a lunghezza fissa (record 7001 char)
+                            </li>
+                            <li class="flex items-start text-sm text-gray-600">
+                                <span class="material-icons-outlined text-green-500 text-sm mr-1">check_circle</span>
+                                Gestione fattura vendita con incasso contestuale (causale 001/027)
+                            </li>
+                            <li class="flex items-start text-sm text-gray-600">
+                                <span class="material-icons-outlined text-green-500 text-sm mr-1">check_circle</span>
+                                Mapping regime IVA (esente art.10 → codice esenzione)
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h6 class="text-sm font-medium text-gray-700 mb-2">Deliverable Tecnici</h6>
+                        <ul class="space-y-1">
+                            <li class="flex items-start text-sm text-gray-600">
+                                <span class="material-icons-outlined text-blue-500 text-sm mr-1">build</span>
+                                Modulo IMPPNGenerator con template record tipo 0
+                            </li>
+                            <li class="flex items-start text-sm text-gray-600">
+                                <span class="material-icons-outlined text-blue-500 text-sm mr-1">build</span>
+                                Funzioni formattazione: numerico con segno, padding, allineamento
+                            </li>
+                            <li class="flex items-start text-sm text-gray-600">
+                                <span class="material-icons-outlined text-blue-500 text-sm mr-1">build</span>
+                                Gestione sezione anagrafica cliente (TRF-RASO → TRF-PIVA)
+                            </li>
+                            <li class="flex items-start text-sm text-gray-600">
+                                <span class="material-icons-outlined text-blue-500 text-sm mr-1">build</span>
+                                Gestione sezione IVA e contropartite ricavo/costo
+                            </li>
+                            <li class="flex items-start text-sm text-gray-600">
+                                <span class="material-icons-outlined text-blue-500 text-sm mr-1">build</span>
+                                Gestione sezione pagamento (TRF-CONTO 9999999/cassa)
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="mt-4 p-3 bg-blue-50 rounded-lg border border-blue-200">
+                    <h6 class="text-sm font-medium text-blue-800 mb-2 flex items-center">
+                        <span class="material-icons-outlined text-blue-700 text-sm mr-2">info</span>
+                        Struttura Record IMPPN per Fattura Vendita con Incasso
+                    </h6>
+                    <div class="text-sm text-blue-700 font-mono">
+                        TRF-CAUSALE=001 | TRF-CAU-PAGAM=027 | TRF-CONTO(1)=9999999 (cliente) | TRF-CONTO(2)=conto cassa/banca
+                    </div>
+                </div>
+            </div>
+
+            <!-- Giorno 3: Interfaccia Desktop -->
+            <div class="bg-white rounded-lg border border-gray-200 p-4 hover:shadow-md transition-shadow">
+                <div class="flex items-center justify-between mb-4">
+                    <div class="flex items-center">
+                        <span class="w-8 h-8 flex items-center justify-center bg-brand rounded-lg text-gray-900 font-medium mr-3">3</span>
+                        <h5 class="font-medium text-gray-800">Interfaccia Utente Desktop & Configurazione</h5>
+                    </div>
+                    <span class="px-3 py-1 bg-yellow-100 text-yellow-800 text-sm rounded-full">Giorno 3</span>
+                </div>
+
+                <div class="grid grid-cols-2 gap-4">
+                    <div>
+                        <h6 class="text-sm font-medium text-gray-700 mb-2">Obiettivi</h6>
+                        <ul class="space-y-1">
+                            <li class="flex items-start text-sm text-gray-600">
+                                <span class="material-icons-outlined text-green-500 text-sm mr-1">check_circle</span>
+                                Interfaccia grafica intuitiva per caricamento file
+                            </li>
+                            <li class="flex items-start text-sm text-gray-600">
+                                <span class="material-icons-outlined text-green-500 text-sm mr-1">check_circle</span>
+                                Pannello configurazione parametri ditta TeamSystem
+                            </li>
+                            <li class="flex items-start text-sm text-gray-600">
+                                <span class="material-icons-outlined text-green-500 text-sm mr-1">check_circle</span>
+                                Preview fatture caricate prima della conversione
+                            </li>
+                            <li class="flex items-start text-sm text-gray-600">
+                                <span class="material-icons-outlined text-green-500 text-sm mr-1">check_circle</span>
+                                Selezione cartella output per file TRAF2000
+                            </li>
+                            <li class="flex items-start text-sm text-gray-600">
+                                <span class="material-icons-outlined text-green-500 text-sm mr-1">check_circle</span>
+                                Log operazioni e report errori
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h6 class="text-sm font-medium text-gray-700 mb-2">Deliverable Tecnici</h6>
+                        <ul class="space-y-1">
+                            <li class="flex items-start text-sm text-gray-600">
+                                <span class="material-icons-outlined text-blue-500 text-sm mr-1">build</span>
+                                Componente per upload file XML
+                            </li>
+                            <li class="flex items-start text-sm text-gray-600">
+                                <span class="material-icons-outlined text-blue-500 text-sm mr-1">build</span>
+                                Form configurazione: codice ditta, conti ricavo, conto cassa
+                            </li>
+                            <li class="flex items-start text-sm text-gray-600">
+                                <span class="material-icons-outlined text-blue-500 text-sm mr-1">build</span>
+                                Tabella preview fatture con totali e stato validazione
+                            </li>
+                            <li class="flex items-start text-sm text-gray-600">
+                                <span class="material-icons-outlined text-blue-500 text-sm mr-1">build</span>
+                                Pulsante "Genera IMPPN" con progress bar
+                            </li>
+                            <li class="flex items-start text-sm text-gray-600">
+                                <span class="material-icons-outlined text-blue-500 text-sm mr-1">build</span>
+                                Persistenza configurazione locale (localStorage/file)
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Giorno 4: Test & Validazione -->
+            <div class="bg-white rounded-lg border border-gray-200 p-4 hover:shadow-md transition-shadow">
+                <div class="flex items-center justify-between mb-4">
+                    <div class="flex items-center">
+                        <span class="w-8 h-8 flex items-center justify-center bg-brand rounded-lg text-gray-900 font-medium mr-3">4</span>
+                        <h5 class="font-medium text-gray-800">Testing, Validazione & Casi Speciali</h5>
+                    </div>
+                    <span class="px-3 py-1 bg-yellow-100 text-yellow-800 text-sm rounded-full">Giorno 4</span>
+                </div>
+
+                <div class="grid grid-cols-2 gap-4">
+                    <div>
+                        <h6 class="text-sm font-medium text-gray-700 mb-2">Obiettivi</h6>
+                        <ul class="space-y-1">
+                            <li class="flex items-start text-sm text-gray-600">
+                                <span class="material-icons-outlined text-green-500 text-sm mr-1">check_circle</span>
+                                Test con dati reali forniti (28 fatture campione)
+                            </li>
+                            <li class="flex items-start text-sm text-gray-600">
+                                <span class="material-icons-outlined text-green-500 text-sm mr-1">check_circle</span>
+                                Validazione output con IMPPN TeamSystem (controllo file)
+                            </li>
+                            <li class="flex items-start text-sm text-gray-600">
+                                <span class="material-icons-outlined text-green-500 text-sm mr-1">check_circle</span>
+                                Gestione casi speciali: IVA 22%, esenzione art.10, bollo
+                            </li>
+                            <li class="flex items-start text-sm text-gray-600">
+                                <span class="material-icons-outlined text-green-500 text-sm mr-1">check_circle</span>
+                                Test multi-riga fattura (chirurgia con più voci)
+                            </li>
+                            <li class="flex items-start text-sm text-gray-600">
+                                <span class="material-icons-outlined text-green-500 text-sm mr-1">check_circle</span>
+                                Fix bug e ottimizzazioni
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h6 class="text-sm font-medium text-gray-700 mb-2">Deliverable Tecnici</h6>
+                        <ul class="space-y-1">
+                            <li class="flex items-start text-sm text-gray-600">
+                                <span class="material-icons-outlined text-blue-500 text-sm mr-1">build</span>
+                                Suite test automatizzati per parser e generatore
+                            </li>
+                            <li class="flex items-start text-sm text-gray-600">
+                                <span class="material-icons-outlined text-blue-500 text-sm mr-1">build</span>
+                                Verifica allineamento campi con specifiche IMPPN
+                            </li>
+                            <li class="flex items-start text-sm text-gray-600">
+                                <span class="material-icons-outlined text-blue-500 text-sm mr-1">build</span>
+                                Gestione tipi pagamento: carta credito, contanti, nota credito
+                            </li>
+                            <li class="flex items-start text-sm text-gray-600">
+                                <span class="material-icons-outlined text-blue-500 text-sm mr-1">build</span>
+                                Report validazione con dettaglio errori per fattura
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="mt-4 p-3 bg-orange-50 rounded-lg border border-orange-200">
+                    <h6 class="text-sm font-medium text-orange-800 mb-2 flex items-center">
+                        <span class="material-icons-outlined text-orange-700 text-sm mr-2">checklist</span>
+                        Casistiche da Testare
+                    </h6>
+                    <ul class="space-y-1 text-sm text-orange-700">
+                        <li>• Fattura esente art.10 (prestazioni mediche) - regime 0%</li>
+                        <li>• Fattura con IVA 22% (medicina estetica) - regime normale</li>
+                        <li>• Fattura con bollo €2,00 (escluso art.15)</li>
+                        <li>• Fattura multi-riga (es. chirurgia + anestesista + struttura)</li>
+                        <li>• Pagamento carta credito vs contanti vs nota credito</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Giorno 5: Packaging & Deploy -->
+            <div class="bg-white rounded-lg border border-gray-200 p-4 hover:shadow-md transition-shadow">
+                <div class="flex items-center justify-between mb-4">
+                    <div class="flex items-center">
+                        <span class="w-8 h-8 flex items-center justify-center bg-brand rounded-lg text-gray-900 font-medium mr-3">5</span>
+                        <h5 class="font-medium text-gray-800">Packaging Windows & Documentazione</h5>
+                    </div>
+                    <span class="px-3 py-1 bg-yellow-100 text-yellow-800 text-sm rounded-full">Giorno 5</span>
+                </div>
+
+                <div class="grid grid-cols-2 gap-4">
+                    <div>
+                        <h6 class="text-sm font-medium text-gray-700 mb-2">Obiettivi</h6>
+                        <ul class="space-y-1">
+                            <li class="flex items-start text-sm text-gray-600">
+                                <span class="material-icons-outlined text-green-500 text-sm mr-1">check_circle</span>
+                                Build applicativo per Windows (.exe)
+                            </li>
+                            <li class="flex items-start text-sm text-gray-600">
+                                <span class="material-icons-outlined text-green-500 text-sm mr-1">check_circle</span>
+                                Creazione installer con setup wizard
+                            </li>
+                            <li class="flex items-start text-sm text-gray-600">
+                                <span class="material-icons-outlined text-green-500 text-sm mr-1">check_circle</span>
+                                Documentazione utente e guida rapida
+                            </li>
+                            <li class="flex items-start text-sm text-gray-600">
+                                <span class="material-icons-outlined text-green-500 text-sm mr-1">check_circle</span>
+                                Consegna e supporto installazione iniziale
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h6 class="text-sm font-medium text-gray-700 mb-2">Deliverable Tecnici</h6>
+                        <ul class="space-y-1">
+                            <li class="flex items-start text-sm text-gray-600">
+                                <span class="material-icons-outlined text-blue-500 text-sm mr-1">build</span>
+                                Eseguibile Windows (.exe) standalone
+                            </li>
+                            <li class="flex items-start text-sm text-gray-600">
+                                <span class="material-icons-outlined text-blue-500 text-sm mr-1">build</span>
+                                Installer con setup wizard opzionale
+                            </li>
+                            <li class="flex items-start text-sm text-gray-600">
+                                <span class="material-icons-outlined text-blue-500 text-sm mr-1">build</span>
+                                Manuale PDF con screenshot e workflow
+                            </li>
+                            <li class="flex items-start text-sm text-gray-600">
+                                <span class="material-icons-outlined text-blue-500 text-sm mr-1">build</span>
+                                File di esempio per test post-installazione
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="mt-4 flex justify-center">
+                    <div class="p-4 bg-blue-50 rounded-lg border border-blue-200 text-center w-64">
+                        <span class="material-icons-outlined text-blue-700 text-4xl">desktop_windows</span>
+                        <div class="text-sm font-medium text-blue-800 mt-2">Windows</div>
+                        <div class="text-xs text-blue-600">.exe installer</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Flusso Operativo -->
+    <div class="bg-white rounded-xl shadow-md p-6">
+        <h3 class="text-lg font-semibold text-gray-800 mb-6">Flusso Operativo dell'Applicativo</h3>
+        <div class="relative">
+            <!-- Timeline -->
+            <div class="absolute left-8 top-12 bottom-0 w-0.5 bg-gray-200"></div>
+
+            <div class="space-y-8">
+                <!-- Step 1 -->
+                <div class="flex items-start">
+                    <div class="flex-shrink-0 w-16 h-16 bg-brand rounded-full flex items-center justify-center relative z-10">
+                        <span class="material-icons-outlined text-gray-900">upload_file</span>
+                    </div>
+                    <div class="ml-6 flex-1">
+                        <h4 class="font-medium text-gray-800 mb-1">1. Esportazione da Xmed</h4>
+                        <p class="text-sm text-gray-600">L'operatore esporta le fatture dal gestionale Xmed in formato XML.
+                        Può selezionare un periodo o un gruppo di fatture da convertire.</p>
+                    </div>
+                </div>
+
+                <!-- Step 2 -->
+                <div class="flex items-start">
+                    <div class="flex-shrink-0 w-16 h-16 bg-brand rounded-full flex items-center justify-center relative z-10">
+                        <span class="material-icons-outlined text-gray-900">folder_open</span>
+                    </div>
+                    <div class="ml-6 flex-1">
+                        <h4 class="font-medium text-gray-800 mb-1">2. Caricamento nel Convertitore</h4>
+                        <p class="text-sm text-gray-600">Avvio dell'applicativo desktop e caricamento del file XML 
+                        o selezione file. L'applicativo mostra l'anteprima delle fatture rilevate.</p>
+                    </div>
+                </div>
+
+                <!-- Step 3 -->
+                <div class="flex items-start">
+                    <div class="flex-shrink-0 w-16 h-16 bg-brand rounded-full flex items-center justify-center relative z-10">
+                        <span class="material-icons-outlined text-gray-900">settings</span>
+                    </div>
+                    <div class="ml-6 flex-1">
+                        <h4 class="font-medium text-gray-800 mb-1">3. Verifica Configurazione</h4>
+                        <p class="text-sm text-gray-600">Controllo parametri: codice ditta TeamSystem, conti di ricavo, conto cassa/banca per incasso.
+                        La configurazione viene salvata per usi successivi.</p>
+                    </div>
+                </div>
+
+                <!-- Step 4 -->
+                <div class="flex items-start">
+                    <div class="flex-shrink-0 w-16 h-16 bg-brand rounded-full flex items-center justify-center relative z-10">
+                        <span class="material-icons-outlined text-gray-900">play_circle</span>
+                    </div>
+                    <div class="ml-6 flex-1">
+                        <h4 class="font-medium text-gray-800 mb-1">4. Generazione File IMPPN</h4>
+                        <p class="text-sm text-gray-600">Click su "Genera IMPPN". L'applicativo converte ogni fattura in un record
+                        a lunghezza fissa secondo le specifiche TRAF2000 v3 e genera il file di output.</p>
+                    </div>
+                </div>
+
+                <!-- Step 5 -->
+                <div class="flex items-start">
+                    <div class="flex-shrink-0 w-16 h-16 bg-brand rounded-full flex items-center justify-center relative z-10">
+                        <span class="material-icons-outlined text-gray-900">download</span>
+                    </div>
+                    <div class="ml-6 flex-1">
+                        <h4 class="font-medium text-gray-800 mb-1">5. Importazione in TeamSystem</h4>
+                        <p class="text-sm text-gray-600">Il file generato viene importato in TeamSystem tramite la procedura IMPPN.
+                        Si consiglia di utilizzare prima la funzione "Controllo file" per validare i dati.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Nota Finale -->
+    <div class="bg-gray-50 rounded-lg p-6 border border-gray-200 mt-8">
+        <div class="flex items-start">
+            <span class="material-icons-outlined text-[#FCD415] mr-3">info</span>
+            <div>
+                <h4 class="font-medium text-gray-800 mb-2">Note sulla Soluzione Proposta</h4>
+                <p class="text-gray-600 mb-4">
+                    L'applicativo desktop rappresenta la soluzione ottimale per questo caso d'uso: nessuna dipendenza da connessione internet,
+                    nessun canone mensile per servizi cloud, massima privacy dei dati che rimangono in locale.
+                    Il software può essere installato su tutte le postazioni necessarie senza costi aggiuntivi di licenza.
+                </p>
+
+                <div class="bg-green-50 p-4 rounded-lg border border-green-200">
+                    <h5 class="font-medium text-green-800 flex items-center mb-2">
+                        <span class="material-icons-outlined text-green-700 mr-2 text-sm">savings</span>
+                        Vantaggi Economici per il Cliente
+                    </h5>
+                    <ul class="text-gray-700 text-sm space-y-1">
+                        <li>• <strong>Costo una tantum</strong> - nessun abbonamento mensile o annuale</li>
+                        <li>• <strong>Installazioni illimitate</strong> - utilizzabile su più PC senza costi aggiuntivi</li>
+                        <li>• <strong>Nessun costo infrastruttura</strong> - non richiede server o hosting</li>
+                        <li>• <strong>Autonomia operativa</strong> - funziona offline, senza dipendenze esterne</li>
+                    </ul>
+                </div>
+
+                <div class="bg-blue-50 p-4 rounded-lg border border-blue-200 mt-4">
+                    <h5 class="font-medium text-blue-800 flex items-center mb-2">
+                        <span class="material-icons-outlined text-blue-700 mr-2 text-sm">support</span>
+                        Supporto e Manutenzione
+                    </h5>
+                    <p class="text-gray-700 text-sm">
+                        Al termine dello sviluppo è previsto un periodo di supporto per assistenza all'installazione,
+                        configurazione iniziale e risoluzione di eventuali problematiche riscontrate nei primi utilizzi.
+                        Eventuali evoluzioni future (nuovi formati di input, campi aggiuntivi IMPPN) potranno essere quotate separatamente.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,405 @@
+<div class="space-y-8">
+    <!-- Hero Section -->
+    <div class="bg-white rounded-xl shadow-md p-6 mb-6">
+        <div class="border-l-4 brand-border pl-4 mb-8">
+            <h2 class="text-2xl font-bold text-gray-800 mb-4">Convertitore XML Xmed → IMPPN TeamSystem per Medlight S.r.l.</h2>
+            <p class="text-gray-600">
+                Applicativo desktop per la conversione automatica delle fatture di vendita esportate dal gestionale medico Xmed
+                nel formato TRAF2000 richiesto dalla procedura IMPPN di TeamSystem.
+                Soluzione standalone per Windows, senza canoni mensili cloud,
+                progettata per ottimizzare il flusso contabile dello studio medico Medlight.
+            </p>
+        </div>
+
+        <!-- Key Features Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
+            <div class="bg-brand bg-opacity-10 p-4 rounded-lg border border-[#FCD415] hover-card">
+                <span class="material-icons-outlined text-[#FCD415] mb-2">desktop_windows</span>
+                <h3 class="font-medium text-gray-800 mb-2">Applicativo Desktop per Windows</h3>
+                <p class="text-sm text-gray-600">Eseguibile .exe per Windows. Funziona offline, senza dipendenze cloud o canoni mensili.</p>
+            </div>
+
+            <div class="bg-brand bg-opacity-10 p-4 rounded-lg border border-[#FCD415] hover-card">
+                <span class="material-icons-outlined text-[#FCD415] mb-2">transform</span>
+                <h3 class="font-medium text-gray-800 mb-2">Conversione Automatica XML → IMPPN</h3>
+                <p class="text-sm text-gray-600">Parsing intelligente del formato Xmed e generazione file a lunghezza fissa TRAF2000 v3 per TeamSystem.</p>
+            </div>
+
+            <div class="bg-brand bg-opacity-10 p-4 rounded-lg border border-[#FCD415] hover-card">
+                <span class="material-icons-outlined text-[#FCD415] mb-2">verified</span>
+                <h3 class="font-medium text-gray-800 mb-2">Validazione e Controllo Dati</h3>
+                <p class="text-sm text-gray-600">Verifica automatica dei dati prima della conversione con report errori dettagliato per ogni fattura.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Contesto Progetto -->
+    <div class="bg-white rounded-xl shadow-md p-6">
+        <div class="flex items-center mb-4">
+            <span class="material-icons-outlined text-[#FCD415] mr-2">business</span>
+            <h3 class="text-lg font-semibold text-gray-800">Contesto del Progetto</h3>
+        </div>
+        <p class="text-gray-600 mb-6">
+            Medlight S.r.l. utilizza il gestionale Xmed per la gestione delle prestazioni mediche e la fatturazione.
+            Le fatture di vendita devono essere trasferite nel gestionale TeamSystem (tramite procedura IMPPN)
+            per la contabilizzazione da parte dello Studio Alcidi & Partners.
+            Attualmente questo processo richiede inserimento manuale o rielaborazione dei dati.
+        </p>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div class="bg-gray-50 rounded-lg p-4">
+                <h4 class="font-medium text-gray-800 mb-3 flex items-center">
+                    <span class="material-icons-outlined text-[#FCD415] mr-2">input</span>
+                    Sorgente Dati - Gestionale Xmed
+                </h4>
+                <ul class="space-y-2 text-sm text-gray-600">
+                    <li class="flex items-start">
+                        <span class="material-icons-outlined text-green-500 text-sm mr-2">arrow_right</span>
+                        Gestionale medico per ambulatori e studi professionali
+                    </li>
+                    <li class="flex items-start">
+                        <span class="material-icons-outlined text-green-500 text-sm mr-2">arrow_right</span>
+                        Export fatture in formato XML proprietario (multi-documento)
+                    </li>
+                    <li class="flex items-start">
+                        <span class="material-icons-outlined text-green-500 text-sm mr-2">arrow_right</span>
+                        Export fatture in formato FatturaPA per SDI
+                    </li>
+                    <li class="flex items-start">
+                        <span class="material-icons-outlined text-green-500 text-sm mr-2">arrow_right</span>
+                        Dati completi: anagrafica cliente, righe fattura, IVA, pagamento
+                    </li>
+                    <li class="flex items-start">
+                        <span class="material-icons-outlined text-green-500 text-sm mr-2">arrow_right</span>
+                        Integrazione Sistema Tessera Sanitaria
+                    </li>
+                </ul>
+            </div>
+
+            <div class="bg-gray-50 rounded-lg p-4">
+                <h4 class="font-medium text-gray-800 mb-3 flex items-center">
+                    <span class="material-icons-outlined text-[#FCD415] mr-2">output</span>
+                    Destinazione - TeamSystem IMPPN
+                </h4>
+                <ul class="space-y-2 text-sm text-gray-600">
+                    <li class="flex items-start">
+                        <span class="material-icons-outlined text-blue-500 text-sm mr-2">arrow_right</span>
+                        Procedura standard per importazione prima nota
+                    </li>
+                    <li class="flex items-start">
+                        <span class="material-icons-outlined text-blue-500 text-sm mr-2">arrow_right</span>
+                        Formato TRAF2000 v3 - record a lunghezza fissa (7001 caratteri)
+                    </li>
+                    <li class="flex items-start">
+                        <span class="material-icons-outlined text-blue-500 text-sm mr-2">arrow_right</span>
+                        Gestione automatica anagrafiche clienti
+                    </li>
+                    <li class="flex items-start">
+                        <span class="material-icons-outlined text-blue-500 text-sm mr-2">arrow_right</span>
+                        Supporto fatture vendita con incasso contestuale
+                    </li>
+                    <li class="flex items-start">
+                        <span class="material-icons-outlined text-blue-500 text-sm mr-2">arrow_right</span>
+                        Contabilità professionisti ordinaria/semplificata
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- Solution -->
+    <div class="grid grid-cols-1 gap-6">
+        <div class="bg-white rounded-xl shadow-md p-6">
+            <div class="flex items-center mb-4">
+                <span class="material-icons-outlined text-green-500 mr-2">check_circle</span>
+                <h3 class="text-lg font-semibold text-gray-800">La Soluzione Proposta</h3>
+            </div>
+            <ul class="space-y-3 text-gray-600">
+                <li class="flex items-start">
+                    <span class="material-icons-outlined text-green-500 mr-2 text-sm">check</span>
+                    Conversione automatica XML → IMPPN in pochi click
+                </li>
+                <li class="flex items-start">
+                    <span class="material-icons-outlined text-green-500 mr-2 text-sm">check</span>
+                    Validazione dati con segnalazione errori prima dell'import
+                </li>
+                <li class="flex items-start">
+                    <span class="material-icons-outlined text-green-500 mr-2 text-sm">check</span>
+                    Riduzione drastica tempo operativo (da ore a minuti)
+                </li>
+                <li class="flex items-start">
+                    <span class="material-icons-outlined text-green-500 mr-2 text-sm">check</span>
+                    Eliminazione errori di trascrizione manuale
+                </li>
+                <li class="flex items-start">
+                    <span class="material-icons-outlined text-green-500 mr-2 text-sm">check</span>
+                    Gestione semplice di qualsiasi volume di fatture
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Tipi Fattura Supportati -->
+    <div class="bg-white rounded-xl shadow-md p-6">
+        <h3 class="text-lg font-semibold text-gray-800 mb-6">Tipologie di Fatture Supportate</h3>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div class="p-4 bg-blue-50 rounded-lg border border-blue-200">
+                <div class="flex items-center mb-3">
+                    <span class="material-icons-outlined text-blue-600 mr-2">medical_services</span>
+                    <h4 class="font-medium text-blue-800">Prestazioni Mediche Esenti IVA</h4>
+                </div>
+                <ul class="space-y-2 text-sm text-blue-700">
+                    <li class="flex items-start">
+                        <span class="material-icons-outlined text-blue-600 text-sm mr-2">circle</span>
+                        Visite dermatologiche e specialistiche
+                    </li>
+                    <li class="flex items-start">
+                        <span class="material-icons-outlined text-blue-600 text-sm mr-2">circle</span>
+                        Trattamenti laser (cheratosi, verruche, tatuaggi)
+                    </li>
+                    <li class="flex items-start">
+                        <span class="material-icons-outlined text-blue-600 text-sm mr-2">circle</span>
+                        Mappatura nevi e diagnostica
+                    </li>
+                    <li class="flex items-start">
+                        <span class="material-icons-outlined text-blue-600 text-sm mr-2">circle</span>
+                        Chirurgia (settoplastica, rinosettoplastica)
+                    </li>
+                </ul>
+                <div class="mt-3 p-2 bg-blue-100 rounded text-xs text-blue-800">
+                    Regime IVA: Esente art.10 comma 1 n.18 DPR 633/1972
+                </div>
+            </div>
+
+            <div class="p-4 bg-purple-50 rounded-lg border border-purple-200">
+                <div class="flex items-center mb-3">
+                    <span class="material-icons-outlined text-purple-600 mr-2">spa</span>
+                    <h4 class="font-medium text-purple-800">Medicina Estetica con IVA 22%</h4>
+                </div>
+                <ul class="space-y-2 text-sm text-purple-700">
+                    <li class="flex items-start">
+                        <span class="material-icons-outlined text-purple-600 text-sm mr-2">circle</span>
+                        Biorivitalizzazione
+                    </li>
+                    <li class="flex items-start">
+                        <span class="material-icons-outlined text-purple-600 text-sm mr-2">circle</span>
+                        Bioristrutturante
+                    </li>
+                    <li class="flex items-start">
+                        <span class="material-icons-outlined text-purple-600 text-sm mr-2">circle</span>
+                        Endermologie LPG
+                    </li>
+                    <li class="flex items-start">
+                        <span class="material-icons-outlined text-purple-600 text-sm mr-2">circle</span>
+                        Trattamenti estetici non terapeutici
+                    </li>
+                </ul>
+                <div class="mt-3 p-2 bg-purple-100 rounded text-xs text-purple-800">
+                    Regime IVA: Aliquota ordinaria 22% - Esigibilità immediata
+                </div>
+            </div>
+        </div>
+
+        <div class="mt-6 p-4 bg-yellow-50 rounded-lg border border-yellow-200">
+            <div class="flex items-center mb-3">
+                <span class="material-icons-outlined text-yellow-700 mr-2">receipt_long</span>
+                <h4 class="font-medium text-yellow-800">Gestione Bollo Virtuale</h4>
+            </div>
+            <p class="text-sm text-yellow-700">
+                Le fatture esenti IVA superiori a €77,47 includono il bollo virtuale di €2,00.
+                Il convertitore gestisce automaticamente la riga bollo come importo escluso art.15 DPR 633/72,
+                mappandola correttamente nel tracciato IMPPN.
+            </p>
+        </div>
+    </div>
+
+    <!-- Workflow Process -->
+    <div class="bg-white rounded-xl shadow-md p-6">
+        <h3 class="text-lg font-semibold text-gray-800 mb-6">Flusso Operativo Completo</h3>
+        <div class="relative">
+            <!-- Timeline -->
+            <div class="absolute left-8 top-12 bottom-0 w-0.5 bg-gray-200"></div>
+
+            <div class="space-y-8">
+                <!-- Step 1 -->
+                <div class="flex items-start">
+                    <div class="flex-shrink-0 w-16 h-16 bg-brand rounded-full flex items-center justify-center relative z-10">
+                        <span class="material-icons-outlined text-gray-900">medical_information</span>
+                    </div>
+                    <div class="ml-6 flex-1">
+                        <h4 class="font-medium text-gray-800 mb-1">1. Gestione Fatture in Xmed</h4>
+                        <p class="text-sm text-gray-600">Medlight gestisce le prestazioni e genera le fatture nel gestionale Xmed.
+                        Le fatture vengono emesse con tutti i dati necessari: anagrafica paziente, prestazioni, importi, regime IVA.</p>
+                    </div>
+                </div>
+
+                <!-- Step 2 -->
+                <div class="flex items-start">
+                    <div class="flex-shrink-0 w-16 h-16 bg-brand rounded-full flex items-center justify-center relative z-10">
+                        <span class="material-icons-outlined text-gray-900">download</span>
+                    </div>
+                    <div class="ml-6 flex-1">
+                        <h4 class="font-medium text-gray-800 mb-1">2. Export XML da Xmed</h4>
+                        <p class="text-sm text-gray-600">Periodicamente (settimanale/mensile) l'operatore esporta le fatture da Xmed
+                        in formato XML. L'export può contenere più fatture in un unico file.</p>
+                    </div>
+                </div>
+
+                <!-- Step 3 -->
+                <div class="flex items-start">
+                    <div class="flex-shrink-0 w-16 h-16 bg-brand rounded-full flex items-center justify-center relative z-10">
+                        <span class="material-icons-outlined text-gray-900">desktop_windows</span>
+                    </div>
+                    <div class="ml-6 flex-1">
+                        <h4 class="font-medium text-gray-800 mb-1">3. Conversione con Applicativo Desktop</h4>
+                        <p class="text-sm text-gray-600">L'operatore avvia il convertitore, carica il file XML, verifica l'anteprima
+                        delle fatture e genera il file TRAF2000 con un click. Il file viene salvato nella cartella desiderata.</p>
+                    </div>
+                </div>
+
+                <!-- Step 4 -->
+                <div class="flex items-start">
+                    <div class="flex-shrink-0 w-16 h-16 bg-brand rounded-full flex items-center justify-center relative z-10">
+                        <span class="material-icons-outlined text-gray-900">upload</span>
+                    </div>
+                    <div class="ml-6 flex-1">
+                        <h4 class="font-medium text-gray-800 mb-1">4. Importazione in TeamSystem</h4>
+                        <p class="text-sm text-gray-600">Lo Studio Alcidi importa il file generato tramite la procedura IMPPN di TeamSystem.
+                        Prima dell'importazione può eseguire il "Controllo file" per validare i dati.</p>
+                    </div>
+                </div>
+
+                <!-- Step 5 -->
+                <div class="flex items-start">
+                    <div class="flex-shrink-0 w-16 h-16 bg-brand rounded-full flex items-center justify-center relative z-10">
+                        <span class="material-icons-outlined text-gray-900">verified</span>
+                    </div>
+                    <div class="ml-6 flex-1">
+                        <h4 class="font-medium text-gray-800 mb-1">5. Contabilizzazione Automatica</h4>
+                        <p class="text-sm text-gray-600">TeamSystem registra automaticamente le fatture di vendita con incasso contestuale,
+                        creando le anagrafiche clienti mancanti e le scritture contabili corrette.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Vantaggi -->
+    <div class="bg-white rounded-xl shadow-md p-6">
+        <h3 class="text-lg font-semibold text-gray-800 mb-6">Vantaggi della Soluzione Desktop</h3>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div class="p-4 bg-gray-50 rounded-lg border border-gray-200 hover-card">
+                <div class="flex items-center mb-3">
+                    <span class="material-icons-outlined text-[#FCD415] mr-2">savings</span>
+                    <h4 class="font-medium">Zero Costi Ricorrenti</h4>
+                </div>
+                <p class="text-sm text-gray-600">Nessun canone mensile, nessun abbonamento cloud.
+                Investimento una tantum per un software di proprietà.</p>
+            </div>
+
+            <div class="p-4 bg-gray-50 rounded-lg border border-gray-200 hover-card">
+                <div class="flex items-center mb-3">
+                    <span class="material-icons-outlined text-[#FCD415] mr-2">devices</span>
+                    <h4 class="font-medium">Multi-Postazione</h4>
+                </div>
+                <p class="text-sm text-gray-600">Installabile su tutti i PC Windows necessari senza costi aggiuntivi.
+                Ogni operatore può avere la propria copia.</p>
+            </div>
+
+            <div class="p-4 bg-gray-50 rounded-lg border border-gray-200 hover-card">
+                <div class="flex items-center mb-3">
+                    <span class="material-icons-outlined text-[#FCD415] mr-2">security</span>
+                    <h4 class="font-medium">Privacy e Sicurezza</h4>
+                </div>
+                <p class="text-sm text-gray-600">I dati sensibili dei pazienti rimangono in locale.
+                Nessun trasferimento su server esterni o cloud.</p>
+            </div>
+
+            <div class="p-4 bg-gray-50 rounded-lg border border-gray-200 hover-card">
+                <div class="flex items-center mb-3">
+                    <span class="material-icons-outlined text-[#FCD415] mr-2">wifi_off</span>
+                    <h4 class="font-medium">Funziona Offline</h4>
+                </div>
+                <p class="text-sm text-gray-600">Non richiede connessione internet per funzionare.
+                Utilizzabile anche senza rete.</p>
+            </div>
+
+            <div class="p-4 bg-gray-50 rounded-lg border border-gray-200 hover-card">
+                <div class="flex items-center mb-3">
+                    <span class="material-icons-outlined text-[#FCD415] mr-2">desktop_windows</span>
+                    <h4 class="font-medium">Compatibile Windows</h4>
+                </div>
+                <p class="text-sm text-gray-600">Eseguibile .exe nativo per Windows.
+                Funziona su Windows 10/11 e versioni successive.</p>
+            </div>
+
+            <div class="p-4 bg-gray-50 rounded-lg border border-gray-200 hover-card">
+                <div class="flex items-center mb-3">
+                    <span class="material-icons-outlined text-[#FCD415] mr-2">speed</span>
+                    <h4 class="font-medium">Veloce e Leggero</h4>
+                </div>
+                <p class="text-sm text-gray-600">Conversione istantanea anche di centinaia di fatture.
+                Nessun tempo di attesa per upload/download.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- ROI -->
+    <div class="bg-white rounded-xl shadow-md p-6">
+        <h3 class="text-lg font-semibold text-gray-800 mb-6">Benefici Operativi Attesi</h3>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div class="space-y-4">
+                <div class="p-4 bg-yellow-50 rounded-lg border border-yellow-200">
+                    <h4 class="font-medium text-yellow-800 mb-2 flex items-center">
+                        <span class="material-icons-outlined text-yellow-700 mr-2">timer</span>
+                        Risparmio di Tempo
+                    </h4>
+                    <ul class="space-y-1 text-sm text-yellow-700">
+                        <li>• Conversione batch di tutte le fatture del periodo in secondi</li>
+                        <li>• Eliminazione inserimento manuale in TeamSystem</li>
+                        <li>• Riduzione tempo ciclo contabile da ore a minuti</li>
+                    </ul>
+                </div>
+
+                <div class="p-4 bg-green-50 rounded-lg border border-green-200">
+                    <h4 class="font-medium text-green-800 mb-2 flex items-center">
+                        <span class="material-icons-outlined text-green-700 mr-2">verified_user</span>
+                        Qualità dei Dati
+                    </h4>
+                    <ul class="space-y-1 text-sm text-green-700">
+                        <li>• Zero errori di trascrizione manuale</li>
+                        <li>• Validazione automatica prima dell'import</li>
+                        <li>• Coerenza garantita tra Xmed e TeamSystem</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="space-y-4">
+                <div class="p-4 bg-blue-50 rounded-lg border border-blue-200">
+                    <h4 class="font-medium text-blue-800 mb-2 flex items-center">
+                        <span class="material-icons-outlined text-blue-700 mr-2">trending_up</span>
+                        Scalabilità
+                    </h4>
+                    <ul class="space-y-1 text-sm text-blue-700">
+                        <li>• Gestione semplice di qualsiasi volume di fatture</li>
+                        <li>• Nessun incremento di costi al crescere dei volumi</li>
+                        <li>• Processo standardizzato e ripetibile</li>
+                    </ul>
+                </div>
+
+                <div class="p-4 bg-purple-50 rounded-lg border border-purple-200">
+                    <h4 class="font-medium text-purple-800 mb-2 flex items-center">
+                        <span class="material-icons-outlined text-purple-700 mr-2">psychology</span>
+                        Semplicità d'Uso
+                    </h4>
+                    <ul class="space-y-1 text-sm text-purple-700">
+                        <li>• Interfaccia intuitiva, nessuna formazione complessa</li>
+                        <li>• Configurazione salvata per usi successivi</li>
+                        <li>• Preview e validazione prima della conversione</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>

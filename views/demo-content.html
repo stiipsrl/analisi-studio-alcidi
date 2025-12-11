@@ -1,0 +1,1168 @@
+<!-- Demo Container -->
+<div class="space-y-8">
+    <!-- Demo Introduction -->
+    <div class="bg-white rounded-xl shadow-md p-6">
+        <div class="border-l-4 brand-border pl-4 mb-8">
+            <h2 class="text-2xl font-bold text-gray-800 mb-4">Demo Piattaforma LMS Ru.di SNC</h2>
+            <p class="text-gray-600">
+                Questa demo mostra le interfacce principali del modulo LMS per la formazione HACCP e sicurezza sul lavoro,
+                dal backoffice admin Ru.di fino al portale cliente aziendale e l'interfaccia di fruizione per i dipendenti,
+                evidenziando l'integrazione completa con le funzionalità GiveMeHive esistenti (CRM, preventivi, firma elettronica, email/WhatsApp marketing).
+            </p>
+        </div>
+    </div>
+
+    <!-- Backoffice Admin Ru.di SNC (Browser Desktop Mockup) -->
+    <div class="bg-gray-800 rounded-xl p-6 shadow-2xl">
+        <h3 class="text-white text-lg font-semibold mb-4">Backoffice Admin Ru.di SNC - Gestione Completa Piattaforma LMS</h3>
+
+        <!-- Browser Chrome -->
+        <div class="bg-gray-100 rounded-t-lg flex items-center p-3 space-x-2">
+            <div class="flex space-x-2">
+                <div class="w-3 h-3 bg-red-500 rounded-full"></div>
+                <div class="w-3 h-3 bg-yellow-500 rounded-full"></div>
+                <div class="w-3 h-3 bg-green-500 rounded-full"></div>
+            </div>
+            <div class="flex-1 bg-white rounded-full px-4 py-1 text-sm text-gray-600">
+                app.givemehive.com/rudi-snc/lms-admin
+            </div>
+        </div>
+
+        <!-- Dashboard Interface -->
+        <div class="bg-gray-50 h-[700px] rounded-b-lg overflow-hidden">
+            <!-- App Header -->
+            <div class="bg-white border-b px-6 py-4 flex justify-between items-center">
+                <div class="flex items-center space-x-4">
+                    <div class="text-2xl font-bold text-gray-800">GiveMeHive</div>
+                    <span class="text-gray-500">|</span>
+                    <span class="text-gray-600">Ru.di SNC - Modulo LMS</span>
+                </div>
+                <div class="flex items-center space-x-4">
+                    <button class="flex items-center space-x-2 px-4 py-2 text-sm text-gray-600 hover:bg-gray-100 rounded-lg relative">
+                        <span class="material-icons-outlined text-sm">notifications</span>
+                        <div class="w-2 h-2 bg-red-500 rounded-full absolute -top-1 -right-1"></div>
+                    </button>
+                    <button class="flex items-center space-x-2 px-4 py-2 text-sm text-gray-600 hover:bg-gray-100 rounded-lg">
+                        <span class="material-icons-outlined text-sm">person</span>
+                        <span>Laura Bianchi - Admin</span>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Main Content -->
+            <div class="grid grid-cols-12 gap-6 p-6 h-[calc(100%-76px)] overflow-y-auto">
+                <!-- Sidebar -->
+                <div class="col-span-3 bg-white rounded-lg shadow p-4">
+                    <div class="space-y-2">
+                        <div class="flex items-center space-x-2 p-2 hover:bg-gray-50 rounded-lg text-gray-600">
+                            <span class="material-icons-outlined">dashboard</span>
+                            <span>Dashboard</span>
+                        </div>
+                        <div class="flex items-center space-x-2 p-2 bg-brand bg-opacity-10 rounded-lg text-gray-900">
+                            <span class="material-icons-outlined">school</span>
+                            <span>Corsi</span>
+                        </div>
+                        <div class="flex items-center space-x-2 p-2 hover:bg-gray-50 rounded-lg text-gray-600">
+                            <span class="material-icons-outlined">people</span>
+                            <span>Clienti</span>
+                        </div>
+                        <div class="flex items-center space-x-2 p-2 hover:bg-gray-50 rounded-lg text-gray-600">
+                            <span class="material-icons-outlined">video_library</span>
+                            <span>Contenuti</span>
+                        </div>
+                        <div class="flex items-center space-x-2 p-2 hover:bg-gray-50 rounded-lg text-gray-600">
+                            <span class="material-icons-outlined">folder</span>
+                            <span>Documentale</span>
+                        </div>
+                        <div class="flex items-center space-x-2 p-2 hover:bg-gray-50 rounded-lg text-gray-600">
+                            <span class="material-icons-outlined">calendar_today</span>
+                            <span>Scadenzario</span>
+                        </div>
+                        <div class="flex items-center space-x-2 p-2 hover:bg-gray-50 rounded-lg text-gray-600">
+                            <span class="material-icons-outlined">assessment</span>
+                            <span>Analytics</span>
+                        </div>
+                        <div class="flex items-center space-x-2 p-2 hover:bg-gray-50 rounded-lg text-gray-600">
+                            <span class="material-icons-outlined">settings</span>
+                            <span>Impostazioni</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Main Content Area -->
+                <div class="col-span-9 space-y-6">
+                    <!-- Stats Row -->
+                    <div class="grid grid-cols-4 gap-4">
+                        <div class="bg-white p-4 rounded-lg shadow">
+                            <div class="flex items-center justify-between mb-2">
+                                <span class="text-sm text-gray-500">Corsi Attivi</span>
+                                <span class="material-icons-outlined text-blue-500">school</span>
+                            </div>
+                            <div class="text-2xl font-bold text-gray-900">24</div>
+                            <div class="text-xs text-gray-500">12 HACCP, 8 Sicurezza, 4 Altro</div>
+                        </div>
+                        <div class="bg-white p-4 rounded-lg shadow">
+                            <div class="flex items-center justify-between mb-2">
+                                <span class="text-sm text-gray-500">Studenti Iscritti</span>
+                                <span class="material-icons-outlined text-green-500">people</span>
+                            </div>
+                            <div class="text-2xl font-bold text-gray-900">156</div>
+                            <div class="text-xs text-gray-500">+12 questo mese</div>
+                        </div>
+                        <div class="bg-white p-4 rounded-lg shadow">
+                            <div class="flex items-center justify-between mb-2">
+                                <span class="text-sm text-gray-500">Attestati Emessi</span>
+                                <span class="material-icons-outlined text-yellow-600">verified</span>
+                            </div>
+                            <div class="text-2xl font-bold text-gray-900">89</div>
+                            <div class="text-xs text-gray-500">Ultimi 30 giorni</div>
+                        </div>
+                        <div class="bg-white p-4 rounded-lg shadow">
+                            <div class="flex items-center justify-between mb-2">
+                                <span class="text-sm text-gray-500">Tasso Completamento</span>
+                                <span class="material-icons-outlined text-purple-500">trending_up</span>
+                            </div>
+                            <div class="text-2xl font-bold text-gray-900">87%</div>
+                            <div class="text-xs text-gray-500">Media piattaforma</div>
+                        </div>
+                    </div>
+
+                    <!-- Gestione Corsi -->
+                    <div class="bg-white rounded-lg shadow">
+                        <div class="flex justify-between items-center p-4 border-b">
+                            <h3 class="font-semibold text-gray-900">Gestione Corsi Formativi</h3>
+                            <div class="flex space-x-2">
+                                <button class="px-3 py-2 bg-brand text-gray-900 rounded-lg text-sm font-medium hover:opacity-90">
+                                    <span class="material-icons-outlined text-sm mr-1">add</span>
+                                    Nuovo Corso
+                                </button>
+                                <button class="px-3 py-2 bg-gray-100 text-gray-700 rounded-lg text-sm font-medium hover:bg-gray-200">
+                                    <span class="material-icons-outlined text-sm mr-1">filter_list</span>
+                                    Filtri
+                                </button>
+                            </div>
+                        </div>
+                        <div class="overflow-x-auto">
+                            <table class="w-full">
+                                <thead class="bg-gray-50">
+                                    <tr>
+                                        <th class="px-4 py-3 text-left text-xs font-medium text-gray-500 uppercase">Corso</th>
+                                        <th class="px-4 py-3 text-left text-xs font-medium text-gray-500 uppercase">Categoria</th>
+                                        <th class="px-4 py-3 text-left text-xs font-medium text-gray-500 uppercase">Iscritti</th>
+                                        <th class="px-4 py-3 text-left text-xs font-medium text-gray-500 uppercase">Completati</th>
+                                        <th class="px-4 py-3 text-left text-xs font-medium text-gray-500 uppercase">Durata</th>
+                                        <th class="px-4 py-3 text-left text-xs font-medium text-gray-500 uppercase">Azioni</th>
+                                    </tr>
+                                </thead>
+                                <tbody class="divide-y divide-gray-200">
+                                    <tr class="hover:bg-gray-50">
+                                        <td class="px-4 py-3 text-sm">
+                                            <div>
+                                                <div class="font-medium text-gray-900">HACCP Base Alimentaristi</div>
+                                                <div class="text-gray-500 text-xs">Reg. UE 852/2004</div>
+                                            </div>
+                                        </td>
+                                        <td class="px-4 py-3 text-sm">
+                                            <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">HACCP</span>
+                                        </td>
+                                        <td class="px-4 py-3 text-sm text-gray-900">45</td>
+                                        <td class="px-4 py-3 text-sm">
+                                            <div class="flex items-center">
+                                                <span class="text-green-600 font-medium">38</span>
+                                                <span class="text-gray-400 ml-1">(84%)</span>
+                                            </div>
+                                        </td>
+                                        <td class="px-4 py-3 text-sm text-gray-500">4 ore</td>
+                                        <td class="px-4 py-3 text-sm">
+                                            <div class="flex space-x-2">
+                                                <button class="text-blue-600 hover:text-blue-800">
+                                                    <span class="material-icons-outlined text-sm">visibility</span>
+                                                </button>
+                                                <button class="text-green-600 hover:text-green-800">
+                                                    <span class="material-icons-outlined text-sm">edit</span>
+                                                </button>
+                                                <button class="text-purple-600 hover:text-purple-800">
+                                                    <span class="material-icons-outlined text-sm">assessment</span>
+                                                </button>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr class="hover:bg-gray-50">
+                                        <td class="px-4 py-3 text-sm">
+                                            <div>
+                                                <div class="font-medium text-gray-900">Sicurezza Generale Lavoratori</div>
+                                                <div class="text-gray-500 text-xs">D.Lgs. 81/2008 - Accordo Stato-Regioni</div>
+                                            </div>
+                                        </td>
+                                        <td class="px-4 py-3 text-sm">
+                                            <span class="px-2 py-1 bg-orange-100 text-orange-800 rounded-full text-xs">Sicurezza</span>
+                                        </td>
+                                        <td class="px-4 py-3 text-sm text-gray-900">67</td>
+                                        <td class="px-4 py-3 text-sm">
+                                            <div class="flex items-center">
+                                                <span class="text-green-600 font-medium">51</span>
+                                                <span class="text-gray-400 ml-1">(76%)</span>
+                                            </div>
+                                        </td>
+                                        <td class="px-4 py-3 text-sm text-gray-500">8 ore</td>
+                                        <td class="px-4 py-3 text-sm">
+                                            <div class="flex space-x-2">
+                                                <button class="text-blue-600 hover:text-blue-800">
+                                                    <span class="material-icons-outlined text-sm">visibility</span>
+                                                </button>
+                                                <button class="text-green-600 hover:text-green-800">
+                                                    <span class="material-icons-outlined text-sm">edit</span>
+                                                </button>
+                                                <button class="text-purple-600 hover:text-purple-800">
+                                                    <span class="material-icons-outlined text-sm">assessment</span>
+                                                </button>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr class="hover:bg-gray-50">
+                                        <td class="px-4 py-3 text-sm">
+                                            <div>
+                                                <div class="font-medium text-gray-900">Antincendio Rischio Medio</div>
+                                                <div class="text-gray-500 text-xs">D.M. 10/03/1998</div>
+                                            </div>
+                                        </td>
+                                        <td class="px-4 py-3 text-sm">
+                                            <span class="px-2 py-1 bg-red-100 text-red-800 rounded-full text-xs">Antincendio</span>
+                                        </td>
+                                        <td class="px-4 py-3 text-sm text-gray-900">23</td>
+                                        <td class="px-4 py-3 text-sm">
+                                            <div class="flex items-center">
+                                                <span class="text-green-600 font-medium">18</span>
+                                                <span class="text-gray-400 ml-1">(78%)</span>
+                                            </div>
+                                        </td>
+                                        <td class="px-4 py-3 text-sm text-gray-500">8 ore</td>
+                                        <td class="px-4 py-3 text-sm">
+                                            <div class="flex space-x-2">
+                                                <button class="text-blue-600 hover:text-blue-800">
+                                                    <span class="material-icons-outlined text-sm">visibility</span>
+                                                </button>
+                                                <button class="text-green-600 hover:text-green-800">
+                                                    <span class="material-icons-outlined text-sm">edit</span>
+                                                </button>
+                                                <button class="text-purple-600 hover:text-purple-800">
+                                                    <span class="material-icons-outlined text-sm">assessment</span>
+                                                </button>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr class="hover:bg-gray-50">
+                                        <td class="px-4 py-3 text-sm">
+                                            <div>
+                                                <div class="font-medium text-gray-900">Primo Soccorso Gruppo B</div>
+                                                <div class="text-gray-500 text-xs">D.M. 388/2003</div>
+                                            </div>
+                                        </td>
+                                        <td class="px-4 py-3 text-sm">
+                                            <span class="px-2 py-1 bg-green-100 text-green-800 rounded-full text-xs">Primo Soccorso</span>
+                                        </td>
+                                        <td class="px-4 py-3 text-sm text-gray-900">21</td>
+                                        <td class="px-4 py-3 text-sm">
+                                            <div class="flex items-center">
+                                                <span class="text-green-600 font-medium">15</span>
+                                                <span class="text-gray-400 ml-1">(71%)</span>
+                                            </div>
+                                        </td>
+                                        <td class="px-4 py-3 text-sm text-gray-500">12 ore</td>
+                                        <td class="px-4 py-3 text-sm">
+                                            <div class="flex space-x-2">
+                                                <button class="text-blue-600 hover:text-blue-800">
+                                                    <span class="material-icons-outlined text-sm">visibility</span>
+                                                </button>
+                                                <button class="text-green-600 hover:text-green-800">
+                                                    <span class="material-icons-outlined text-sm">edit</span>
+                                                </button>
+                                                <button class="text-purple-600 hover:text-purple-800">
+                                                    <span class="material-icons-outlined text-sm">assessment</span>
+                                                </button>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Portale Cliente Aziendale (Desktop) - Es. "Ristorante Da Mario" -->
+    <div class="bg-gray-800 rounded-xl p-6 shadow-2xl mt-8">
+        <h3 class="text-white text-lg font-semibold mb-4">Portale Cliente Aziendale - Dashboard Dipendenti</h3>
+
+        <!-- Browser Chrome -->
+        <div class="bg-gray-100 rounded-t-lg flex items-center p-3 space-x-2">
+            <div class="flex space-x-2">
+                <div class="w-3 h-3 bg-red-500 rounded-full"></div>
+                <div class="w-3 h-3 bg-yellow-500 rounded-full"></div>
+                <div class="w-3 h-3 bg-green-500 rounded-full"></div>
+            </div>
+            <div class="flex-1 bg-white rounded-full px-4 py-1 text-sm text-gray-600">
+                app.givemehive.com/rudi-snc/cliente/ristorante-da-mario
+            </div>
+        </div>
+
+        <!-- Cliente Dashboard -->
+        <div class="bg-gray-50 h-[600px] rounded-b-lg overflow-hidden">
+            <!-- Header -->
+            <div class="bg-white border-b px-6 py-4">
+                <div class="flex justify-between items-center">
+                    <div>
+                        <h4 class="text-lg font-semibold text-gray-800">Ristorante Da Mario</h4>
+                        <p class="text-sm text-gray-600">Benvenuto, Giuseppe Rossi (Titolare)</p>
+                    </div>
+                    <div class="flex items-center space-x-4">
+                        <button class="flex items-center space-x-2 px-4 py-2 bg-brand text-gray-900 rounded-lg text-sm font-medium hover:opacity-90">
+                            <span class="material-icons-outlined text-sm">person_add</span>
+                            Aggiungi Dipendente
+                        </button>
+                        <button class="text-gray-600 hover:text-gray-900">
+                            <span class="material-icons-outlined">notifications</span>
+                        </button>
+                        <button class="text-gray-600 hover:text-gray-900">
+                            <span class="material-icons-outlined">settings</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Dashboard Content -->
+            <div class="p-6 overflow-y-auto h-[calc(100%-76px)]">
+                <!-- Stats Overview -->
+                <div class="grid grid-cols-4 gap-4 mb-6">
+                    <div class="bg-white p-4 rounded-lg shadow">
+                        <div class="text-sm text-gray-500 mb-1">Dipendenti Attivi</div>
+                        <div class="text-2xl font-bold text-gray-900">5</div>
+                    </div>
+                    <div class="bg-white p-4 rounded-lg shadow">
+                        <div class="text-sm text-gray-500 mb-1">Corsi Completati</div>
+                        <div class="text-2xl font-bold text-green-600">11/15</div>
+                    </div>
+                    <div class="bg-white p-4 rounded-lg shadow">
+                        <div class="text-sm text-gray-500 mb-1">Scadenze Prossime</div>
+                        <div class="text-2xl font-bold text-yellow-600">2</div>
+                    </div>
+                    <div class="bg-white p-4 rounded-lg shadow">
+                        <div class="text-sm text-gray-500 mb-1">Attestati Validi</div>
+                        <div class="text-2xl font-bold text-blue-600">11</div>
+                    </div>
+                </div>
+
+                <!-- Dipendenti Cards -->
+                <div class="bg-white rounded-lg shadow p-6 mb-6">
+                    <h5 class="font-semibold text-gray-800 mb-4">I Tuoi Dipendenti</h5>
+                    <div class="grid grid-cols-3 gap-4">
+                        <!-- Dipendente 1 -->
+                        <div class="border border-gray-200 rounded-lg p-4 hover:shadow-md transition">
+                            <div class="flex items-center mb-3">
+                                <div class="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center mr-3">
+                                    <span class="text-blue-600 font-semibold">MB</span>
+                                </div>
+                                <div>
+                                    <div class="font-medium text-gray-900">Maria Bianchi</div>
+                                    <div class="text-xs text-gray-500">Cameriera</div>
+                                </div>
+                            </div>
+                            <div class="space-y-2">
+                                <div class="flex justify-between text-sm">
+                                    <span class="text-gray-600">Corsi:</span>
+                                    <span class="font-medium text-green-600">2/3 completati</span>
+                                </div>
+                                <div class="flex justify-between text-sm">
+                                    <span class="text-gray-600">HACCP:</span>
+                                    <span class="text-gray-900">Scad. 15/03/2026</span>
+                                </div>
+                                <div class="mt-2">
+                                    <span class="px-2 py-1 bg-green-100 text-green-800 text-xs rounded-full">⭐ Top Student</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Dipendente 2 -->
+                        <div class="border border-gray-200 rounded-lg p-4 hover:shadow-md transition">
+                            <div class="flex items-center mb-3">
+                                <div class="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center mr-3">
+                                    <span class="text-green-600 font-semibold">LV</span>
+                                </div>
+                                <div>
+                                    <div class="font-medium text-gray-900">Luca Verdi</div>
+                                    <div class="text-xs text-gray-500">Cuoco</div>
+                                </div>
+                            </div>
+                            <div class="space-y-2">
+                                <div class="flex justify-between text-sm">
+                                    <span class="text-gray-600">Corsi:</span>
+                                    <span class="font-medium text-green-600">3/3 completati ✅</span>
+                                </div>
+                                <div class="flex justify-between text-sm">
+                                    <span class="text-gray-600">HACCP:</span>
+                                    <span class="text-gray-900">Scad. 22/08/2026</span>
+                                </div>
+                                <div class="mt-2">
+                                    <span class="px-2 py-1 bg-blue-100 text-blue-800 text-xs rounded-full">✅ Tutto OK</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Dipendente 3 -->
+                        <div class="border border-yellow-200 rounded-lg p-4 hover:shadow-md transition bg-yellow-50">
+                            <div class="flex items-center mb-3">
+                                <div class="w-12 h-12 bg-yellow-100 rounded-full flex items-center justify-center mr-3">
+                                    <span class="text-yellow-600 font-semibold">AN</span>
+                                </div>
+                                <div>
+                                    <div class="font-medium text-gray-900">Anna Neri</div>
+                                    <div class="text-xs text-gray-500">Responsabile Sala</div>
+                                </div>
+                            </div>
+                            <div class="space-y-2">
+                                <div class="flex justify-between text-sm">
+                                    <span class="text-gray-600">Corsi:</span>
+                                    <span class="font-medium text-yellow-600">1/2 in corso 🔄</span>
+                                </div>
+                                <div class="flex justify-between text-sm">
+                                    <span class="text-gray-600">HACCP:</span>
+                                    <span class="text-red-600 font-medium">Scad. 10/01/2026 ⚠️</span>
+                                </div>
+                                <div class="mt-2">
+                                    <span class="px-2 py-1 bg-red-100 text-red-800 text-xs rounded-full">⏰ In scadenza</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Sezioni Aggiuntive -->
+                <div class="grid grid-cols-2 gap-6">
+                    <div class="bg-white rounded-lg shadow p-4">
+                        <h5 class="font-medium text-gray-800 mb-3">📋 Corsi Assegnati</h5>
+                        <div class="space-y-2 text-sm">
+                            <div class="flex justify-between">
+                                <span>HACCP Base</span>
+                                <span class="text-green-600">5/5 completati</span>
+                            </div>
+                            <div class="flex justify-between">
+                                <span>Allergeni</span>
+                                <span class="text-yellow-600">3/5 completati</span>
+                            </div>
+                            <div class="flex justify-between">
+                                <span>Sicurezza Generale</span>
+                                <span class="text-blue-600">3/5 completati</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bg-white rounded-lg shadow p-4">
+                        <h5 class="font-medium text-gray-800 mb-3">📁 Documenti Azienda</h5>
+                        <div class="space-y-2 text-sm">
+                            <div class="flex items-center justify-between">
+                                <span>📄 DVR Ristorante</span>
+                                <button class="text-blue-600 text-xs">Visualizza</button>
+                            </div>
+                            <div class="flex items-center justify-between">
+                                <span>📄 Manuale HACCP</span>
+                                <button class="text-blue-600 text-xs">Visualizza</button>
+                            </div>
+                            <div class="flex items-center justify-between">
+                                <span>📄 Registri Temperature</span>
+                                <button class="text-blue-600 text-xs">Visualizza</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Interfaccia Mobile Utente Dipendente - Maria Bianchi -->
+    <div class="bg-gray-800 rounded-xl p-6 shadow-2xl mt-8">
+        <h3 class="text-white text-lg font-semibold mb-4">App Mobile Dipendente - Fruizione Corsi</h3>
+
+        <!-- Mobile Frame -->
+        <div class="flex justify-center">
+            <div class="relative">
+                <!-- Phone Frame -->
+                <div class="bg-gray-900 rounded-[2.5rem] p-2 shadow-2xl">
+                    <div class="bg-black rounded-[2rem] overflow-hidden w-80 h-[640px]">
+                        <!-- Status Bar -->
+                        <div class="bg-black text-white px-6 py-2 flex justify-between text-xs">
+                            <span>9:41</span>
+                            <div class="flex space-x-1">
+                                <span>●●●</span>
+                                <span>📶</span>
+                                <span>🔋</span>
+                            </div>
+                        </div>
+
+                        <!-- App Content -->
+                        <div class="bg-gray-50 h-full overflow-y-auto">
+                            <!-- Header -->
+                            <div class="bg-brand p-4 flex items-center justify-between">
+                                <div>
+                                    <h4 class="font-bold text-gray-900">Ru.di SNC</h4>
+                                    <p class="text-sm text-gray-700">Ciao Maria 👋</p>
+                                </div>
+                                <div class="flex items-center space-x-3">
+                                    <button class="relative">
+                                        <span class="material-icons-outlined text-gray-900">notifications</span>
+                                        <div class="w-2 h-2 bg-red-500 rounded-full absolute -top-1 -right-1"></div>
+                                    </button>
+                                    <div class="w-10 h-10 bg-gray-900 rounded-full flex items-center justify-center">
+                                        <span class="text-white text-sm font-bold">MB</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Dashboard Home -->
+                            <div class="p-4">
+                                <!-- Card Corsi -->
+                                <div class="bg-white rounded-lg p-4 shadow-sm border border-gray-200 mb-4">
+                                    <h5 class="font-semibold text-gray-800 mb-3">📚 I Miei Corsi</h5>
+                                    <div class="grid grid-cols-3 gap-2 text-center text-xs mb-4">
+                                        <div>
+                                            <div class="text-blue-600 font-bold text-lg">1</div>
+                                            <div class="text-gray-600">In Corso</div>
+                                        </div>
+                                        <div>
+                                            <div class="text-green-600 font-bold text-lg">2</div>
+                                            <div class="text-gray-600">Completati</div>
+                                        </div>
+                                        <div>
+                                            <div class="text-gray-400 font-bold text-lg">0</div>
+                                            <div class="text-gray-600">Da Iniziare</div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Corso in Corso -->
+                                <div class="bg-blue-50 rounded-lg p-4 border border-blue-200 mb-3">
+                                    <div class="flex items-center mb-2">
+                                        <span class="material-icons-outlined text-blue-600 text-sm mr-2">play_circle</span>
+                                        <span class="text-xs text-blue-600 font-medium">IN CORSO</span>
+                                    </div>
+                                    <h6 class="font-semibold text-gray-900 mb-2">Allergeni e Intolleranze</h6>
+                                    <div class="mb-3">
+                                        <div class="flex justify-between text-xs text-gray-600 mb-1">
+                                            <span>Progressi: 65%</span>
+                                            <span>3/5 moduli</span>
+                                        </div>
+                                        <div class="w-full bg-gray-200 rounded-full h-2">
+                                            <div class="bg-blue-600 h-2 rounded-full" style="width: 65%"></div>
+                                        </div>
+                                    </div>
+                                    <button class="w-full bg-blue-600 text-white py-2 rounded-lg text-sm font-medium">
+                                        Continua Corso →
+                                    </button>
+                                </div>
+
+                                <!-- Corsi Completati -->
+                                <div class="mb-3">
+                                    <h6 class="font-medium text-gray-700 mb-2 text-sm">✅ Completati</h6>
+
+                                    <div class="bg-white rounded-lg p-3 border border-gray-200 mb-2">
+                                        <div class="flex items-center justify-between">
+                                            <div class="flex-1">
+                                                <div class="font-medium text-gray-900 text-sm">HACCP Base Alimentaristi</div>
+                                                <div class="text-xs text-gray-500">Completato: 15/09/2024 • Punteggio: 95/100</div>
+                                            </div>
+                                            <button class="ml-2 px-3 py-1 bg-brand text-gray-900 rounded text-xs font-medium">
+                                                📄 Attestato
+                                            </button>
+                                        </div>
+                                    </div>
+
+                                    <div class="bg-white rounded-lg p-3 border border-gray-200">
+                                        <div class="flex items-center justify-between">
+                                            <div class="flex-1">
+                                                <div class="font-medium text-gray-900 text-sm">Sicurezza Generale Lavoratori</div>
+                                                <div class="text-xs text-gray-500">Completato: 22/08/2024 • Punteggio: 88/100</div>
+                                            </div>
+                                            <button class="ml-2 px-3 py-1 bg-brand text-gray-900 rounded text-xs font-medium">
+                                                📄 Attestato
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Scadenze -->
+                                <div class="bg-yellow-50 rounded-lg p-4 border border-yellow-200">
+                                    <div class="flex items-center mb-2">
+                                        <span class="material-icons-outlined text-yellow-600 text-sm mr-2">schedule</span>
+                                        <span class="text-xs text-yellow-600 font-medium">PROSSIMA SCADENZA</span>
+                                    </div>
+                                    <div class="text-sm font-medium text-gray-900">HACCP Base - Rinnovo</div>
+                                    <div class="text-xs text-gray-600">Entro: 15/03/2026 (456 giorni)</div>
+                                    <div class="text-xs text-gray-500 mt-2">🔔 Notifiche attive</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Fruizione Corso - Video Lezione (Desktop) -->
+    <div class="bg-gray-800 rounded-xl p-6 shadow-2xl mt-8">
+        <h3 class="text-white text-lg font-semibold mb-4">Interfaccia Fruizione Corso - Video Lezione</h3>
+
+        <div class="bg-gray-50 rounded-lg overflow-hidden">
+            <!-- Breadcrumb -->
+            <div class="bg-white px-6 py-3 border-b text-sm text-gray-600">
+                Home > Allergeni e Intolleranze > Modulo 3 > Lezione 2
+            </div>
+
+            <div class="grid grid-cols-12 gap-6 p-6">
+                <!-- Video Player -->
+                <div class="col-span-8">
+                    <div class="bg-black rounded-lg overflow-hidden mb-4" style="aspect-ratio: 16/9;">
+                        <div class="w-full h-full flex items-center justify-center text-white">
+                            <div class="text-center">
+                                <span class="material-icons-outlined text-6xl mb-4">play_circle</span>
+                                <div class="text-lg font-semibold">Etichettatura Allergeni - Parte 2</div>
+                                <div class="text-sm text-gray-400">Durata: 18 minuti</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bg-white rounded-lg p-4">
+                        <h5 class="font-semibold text-gray-900 mb-2">Etichettatura Allergeni - Parte 2</h5>
+                        <div class="flex items-center space-x-4 text-sm text-gray-600 mb-3">
+                            <span>📹 18 min</span>
+                            <span>•</span>
+                            <span>👁️ 45% completato</span>
+                            <span>•</span>
+                            <span>⏱️ Tempo rimanente: ~10 min</span>
+                        </div>
+                        <p class="text-sm text-gray-600">
+                            In questa lezione approfondiremo le normative europee sull'etichettatura degli allergeni alimentari,
+                            con focus particolare sul Regolamento UE 1169/2011 e le modalità corrette di indicazione in etichetta.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Sidebar Contenuti -->
+                <div class="col-span-4">
+                    <div class="bg-white rounded-lg p-4 shadow">
+                        <h6 class="font-semibold text-gray-800 mb-3">📖 Modulo 3: Normativa Allergeni</h6>
+                        <div class="space-y-2">
+                            <div class="flex items-center p-2 bg-green-50 rounded border border-green-200">
+                                <span class="material-icons-outlined text-green-600 text-sm mr-2">check_circle</span>
+                                <div class="flex-1">
+                                    <div class="text-sm font-medium text-gray-900">Lezione 1: Introduzione</div>
+                                    <div class="text-xs text-gray-500">15 min</div>
+                                </div>
+                            </div>
+
+                            <div class="flex items-center p-2 bg-blue-50 rounded border-2 border-blue-500">
+                                <span class="material-icons-outlined text-blue-600 text-sm mr-2">play_arrow</span>
+                                <div class="flex-1">
+                                    <div class="text-sm font-medium text-gray-900">Lezione 2: Etichettatura</div>
+                                    <div class="text-xs text-gray-500">18 min • In corso</div>
+                                </div>
+                            </div>
+
+                            <div class="flex items-center p-2 bg-gray-50 rounded border border-gray-200 opacity-50">
+                                <span class="material-icons-outlined text-gray-400 text-sm mr-2">lock</span>
+                                <div class="flex-1">
+                                    <div class="text-sm font-medium text-gray-600">Lezione 3: Casi pratici</div>
+                                    <div class="text-xs text-gray-500">20 min</div>
+                                </div>
+                            </div>
+
+                            <div class="flex items-center p-2 bg-gray-50 rounded border border-gray-200 opacity-50">
+                                <span class="material-icons-outlined text-gray-400 text-sm mr-2">lock</span>
+                                <div class="flex-1">
+                                    <div class="text-sm font-medium text-gray-600">Quiz Modulo 3</div>
+                                    <div class="text-xs text-gray-500">10 domande</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="mt-4 p-3 bg-gray-50 rounded">
+                            <h6 class="font-medium text-gray-800 mb-2 text-sm">📄 Materiale Scaricabile</h6>
+                            <div class="space-y-2">
+                                <button class="w-full flex items-center justify-between p-2 hover:bg-gray-100 rounded text-sm">
+                                    <span>📥 Slide Lezione 2.pdf</span>
+                                    <span class="material-icons-outlined text-sm">download</span>
+                                </button>
+                                <button class="w-full flex items-center justify-between p-2 hover:bg-gray-100 rounded text-sm">
+                                    <span>📥 Tabella Allergeni.pdf</span>
+                                    <span class="material-icons-outlined text-sm">download</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Quiz Interattivo (Mobile) -->
+    <div class="bg-gray-800 rounded-xl p-6 shadow-2xl mt-8">
+        <h3 class="text-white text-lg font-semibold mb-4">Quiz Interattivo - Valutazione Finale</h3>
+
+        <div class="flex justify-center">
+            <div class="bg-gray-900 rounded-[2.5rem] p-2 shadow-2xl">
+                <div class="bg-white rounded-[2rem] overflow-hidden w-80 h-[640px]">
+                    <div class="bg-brand p-4">
+                        <h4 class="font-bold text-gray-900">Quiz Finale - Allergeni</h4>
+                        <p class="text-sm text-gray-700">Modulo 3: Normativa Allergeni</p>
+                    </div>
+
+                    <div class="p-6">
+                        <div class="mb-4">
+                            <div class="flex justify-between text-sm text-gray-600 mb-2">
+                                <span>Domanda 3 di 10</span>
+                                <span>⏱️ 08:34</span>
+                            </div>
+                            <div class="w-full bg-gray-200 rounded-full h-2">
+                                <div class="bg-blue-600 h-2 rounded-full" style="width: 30%"></div>
+                            </div>
+                        </div>
+
+                        <div class="bg-blue-50 rounded-lg p-4 border border-blue-200 mb-6">
+                            <div class="flex items-start mb-4">
+                                <span class="material-icons-outlined text-blue-600 mr-2">help_outline</span>
+                                <div>
+                                    <h5 class="font-semibold text-gray-900 mb-2">
+                                        Quali dei seguenti sono allergeni che devono obbligatoriamente essere indicati in etichetta secondo il Reg. UE 1169/2011?
+                                    </h5>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="space-y-3 mb-6">
+                            <button class="w-full p-4 bg-white border-2 border-gray-200 rounded-lg text-left hover:border-blue-500 hover:bg-blue-50 transition">
+                                <div class="flex items-center">
+                                    <div class="w-6 h-6 border-2 border-gray-300 rounded-full mr-3"></div>
+                                    <span class="text-gray-900">A) Glutine, lattosio, zucchero</span>
+                                </div>
+                            </button>
+
+                            <button class="w-full p-4 bg-green-50 border-2 border-green-500 rounded-lg text-left">
+                                <div class="flex items-center">
+                                    <div class="w-6 h-6 bg-green-500 border-2 border-green-500 rounded-full mr-3 flex items-center justify-center">
+                                        <span class="material-icons-outlined text-white text-sm">check</span>
+                                    </div>
+                                    <span class="text-gray-900">B) Glutine, crostacei, uova ✓</span>
+                                </div>
+                            </button>
+
+                            <button class="w-full p-4 bg-white border-2 border-gray-200 rounded-lg text-left hover:border-blue-500 hover:bg-blue-50 transition">
+                                <div class="flex items-center">
+                                    <div class="w-6 h-6 border-2 border-gray-300 rounded-full mr-3"></div>
+                                    <span class="text-gray-900">C) Solo glutine e lattosio</span>
+                                </div>
+                            </button>
+
+                            <button class="w-full p-4 bg-white border-2 border-gray-200 rounded-lg text-left hover:border-blue-500 hover:bg-blue-50 transition">
+                                <div class="flex items-center">
+                                    <div class="w-6 h-6 border-2 border-gray-300 rounded-full mr-3"></div>
+                                    <span class="text-gray-900">D) Nessun obbligo di indicazione</span>
+                                </div>
+                            </button>
+                        </div>
+
+                        <button class="w-full bg-brand text-gray-900 py-3 rounded-lg font-semibold hover:opacity-90 transition">
+                            Conferma Risposta →
+                        </button>
+
+                        <div class="mt-4 text-center text-sm text-gray-500">
+                            <p>Punteggio attuale: 2/2 (100%)</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Attestato PDF Preview -->
+    <div class="bg-white rounded-xl shadow-md p-6 mt-8">
+        <h3 class="text-lg font-semibold text-gray-800 mb-6">Anteprima Attestato Digitale PDF</h3>
+        <div class="flex justify-center">
+            <div class="bg-white border-4 border-brand rounded-lg p-8 max-w-2xl shadow-xl">
+                <div class="text-center mb-6">
+                    <div class="text-sm text-gray-600 mb-2">Ru.di SNC - Consulenza e Formazione</div>
+                    <div class="text-xs text-gray-500">Via Masaniello 4B, 95128 Catania (CT)</div>
+                </div>
+
+                <div class="border-t-2 border-b-2 border-brand py-4 mb-6">
+                    <h2 class="text-3xl font-bold text-center text-gray-900">ATTESTATO DI FREQUENZA</h2>
+                    <p class="text-center text-sm text-gray-600 mt-2">E SUPERAMENTO CORSO DI FORMAZIONE</p>
+                </div>
+
+                <div class="space-y-4 mb-6">
+                    <p class="text-center text-gray-700">Si certifica che</p>
+                    <p class="text-center text-2xl font-bold text-gray-900">MARIA BIANCHI</p>
+                    <p class="text-center text-sm text-gray-600">C.F. BNCMRA85A41C351Z</p>
+
+                    <p class="text-center text-gray-700 mt-6">ha frequentato con esito positivo il corso di formazione:</p>
+
+                    <div class="bg-gray-50 p-4 rounded-lg my-4">
+                        <p class="text-center text-xl font-bold text-gray-900">"HACCP BASE ALIMENTARISTI"</p>
+                        <p class="text-center text-sm text-gray-600 mt-2">Addetti alla manipolazione degli alimenti</p>
+                    </div>
+
+                    <div class="grid grid-cols-2 gap-4 text-sm">
+                        <div>
+                            <p class="text-gray-600">Durata corso:</p>
+                            <p class="font-semibold text-gray-900">4 ore</p>
+                        </div>
+                        <div>
+                            <p class="text-gray-600">Data completamento:</p>
+                            <p class="font-semibold text-gray-900">15/09/2024</p>
+                        </div>
+                        <div>
+                            <p class="text-gray-600">Punteggio finale:</p>
+                            <p class="font-semibold text-green-600">95/100</p>
+                        </div>
+                        <div>
+                            <p class="text-gray-600">Valido fino al:</p>
+                            <p class="font-semibold text-gray-900">15/09/2027</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="border-t pt-6 mt-6">
+                    <div class="grid grid-cols-2 gap-8">
+                        <div class="text-center">
+                            <div class="mb-2">
+                                <div class="text-sm text-gray-600 mb-1">Firma Digitale</div>
+                                <div class="font-serif italic text-gray-900">Dott. Ruggero Di Stefano</div>
+                            </div>
+                            <p class="text-xs text-gray-500">Ru.di SNC - Catania</p>
+                        </div>
+                        <div class="flex items-center justify-center">
+                            <div class="bg-gray-900 p-3 rounded">
+                                <div class="w-24 h-24 bg-white rounded flex items-center justify-center text-xs text-gray-600">
+                                    QR Code<br/>Verifica
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="border-t pt-4 mt-6 text-xs text-gray-500 text-center">
+                    <p class="font-semibold mb-1">Conforme a:</p>
+                    <p>Reg. (UE) 852/2004 • D.Lgs. 193/2007 • Reg. (UE) 2017/625</p>
+                    <p class="mt-2">ID Attestato: RD2024-HACCP-00789 • Emesso da piattaforma GiveMeHive</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Dashboard Documentale Cliente -->
+    <div class="bg-white rounded-xl shadow-md p-6 mt-8">
+        <h3 class="text-lg font-semibold text-gray-800 mb-6">Dashboard Documentale Cliente - Repository Digitale</h3>
+
+        <div class="bg-gray-50 rounded-lg p-6">
+            <div class="flex justify-between items-center mb-6">
+                <div>
+                    <h4 class="font-semibold text-gray-900">Documenti - Ristorante Da Mario</h4>
+                    <p class="text-sm text-gray-600">Repository digitale con versionamento e scadenze</p>
+                </div>
+                <button class="px-4 py-2 bg-brand text-gray-900 rounded-lg font-medium hover:opacity-90">
+                    <span class="material-icons-outlined text-sm mr-1">upload</span>
+                    Carica Documento
+                </button>
+            </div>
+
+            <!-- Struttura Cartelle -->
+            <div class="grid grid-cols-4 gap-4 mb-6">
+                <div class="bg-white p-4 rounded-lg border border-gray-200 hover:shadow-md transition cursor-pointer">
+                    <div class="flex items-center mb-2">
+                        <span class="material-icons-outlined text-blue-500 mr-2">folder</span>
+                        <h5 class="font-medium text-gray-900">DVR e Sicurezza</h5>
+                    </div>
+                    <p class="text-sm text-gray-500">8 documenti</p>
+                </div>
+
+                <div class="bg-white p-4 rounded-lg border border-gray-200 hover:shadow-md transition cursor-pointer">
+                    <div class="flex items-center mb-2">
+                        <span class="material-icons-outlined text-green-500 mr-2">folder</span>
+                        <h5 class="font-medium text-gray-900">Manuali HACCP</h5>
+                    </div>
+                    <p class="text-sm text-gray-500">12 documenti</p>
+                </div>
+
+                <div class="bg-white p-4 rounded-lg border border-gray-200 hover:shadow-md transition cursor-pointer">
+                    <div class="flex items-center mb-2">
+                        <span class="material-icons-outlined text-yellow-600 mr-2">folder</span>
+                        <h5 class="font-medium text-gray-900">Registri</h5>
+                    </div>
+                    <p class="text-sm text-gray-500">45 documenti</p>
+                </div>
+
+                <div class="bg-white p-4 rounded-lg border border-gray-200 hover:shadow-md transition cursor-pointer">
+                    <div class="flex items-center mb-2">
+                        <span class="material-icons-outlined text-purple-500 mr-2">folder</span>
+                        <h5 class="font-medium text-gray-900">Certificati</h5>
+                    </div>
+                    <p class="text-sm text-gray-500">24 documenti</p>
+                </div>
+            </div>
+
+            <!-- Documenti Recenti -->
+            <div class="bg-white rounded-lg shadow">
+                <div class="p-4 border-b">
+                    <h5 class="font-semibold text-gray-800">Documenti Recenti</h5>
+                </div>
+                <table class="w-full">
+                    <thead class="bg-gray-50">
+                        <tr>
+                            <th class="px-4 py-3 text-left text-xs font-medium text-gray-500 uppercase">Nome File</th>
+                            <th class="px-4 py-3 text-left text-xs font-medium text-gray-500 uppercase">Categoria</th>
+                            <th class="px-4 py-3 text-left text-xs font-medium text-gray-500 uppercase">Data Upload</th>
+                            <th class="px-4 py-3 text-left text-xs font-medium text-gray-500 uppercase">Scadenza</th>
+                            <th class="px-4 py-3 text-left text-xs font-medium text-gray-500 uppercase">Azioni</th>
+                        </tr>
+                    </thead>
+                    <tbody class="divide-y divide-gray-200">
+                        <tr class="hover:bg-gray-50">
+                            <td class="px-4 py-3 text-sm">
+                                <div class="flex items-center">
+                                    <span class="material-icons-outlined text-red-500 text-sm mr-2">picture_as_pdf</span>
+                                    <span class="font-medium text-gray-900">DVR_Ristorante_v3.pdf</span>
+                                </div>
+                            </td>
+                            <td class="px-4 py-3 text-sm">
+                                <span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs">DVR</span>
+                            </td>
+                            <td class="px-4 py-3 text-sm text-gray-500">10/01/2025</td>
+                            <td class="px-4 py-3 text-sm">
+                                <span class="text-yellow-600">15/02/2026</span>
+                            </td>
+                            <td class="px-4 py-3 text-sm">
+                                <div class="flex space-x-2">
+                                    <button class="text-blue-600 hover:text-blue-800">
+                                        <span class="material-icons-outlined text-sm">visibility</span>
+                                    </button>
+                                    <button class="text-green-600 hover:text-green-800">
+                                        <span class="material-icons-outlined text-sm">download</span>
+                                    </button>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="hover:bg-gray-50">
+                            <td class="px-4 py-3 text-sm">
+                                <div class="flex items-center">
+                                    <span class="material-icons-outlined text-red-500 text-sm mr-2">picture_as_pdf</span>
+                                    <span class="font-medium text-gray-900">Registro_Temperature_Gen2025.pdf</span>
+                                </div>
+                            </td>
+                            <td class="px-4 py-3 text-sm">
+                                <span class="px-2 py-1 bg-yellow-100 text-yellow-800 rounded-full text-xs">Registri</span>
+                            </td>
+                            <td class="px-4 py-3 text-sm text-gray-500">08/01/2025</td>
+                            <td class="px-4 py-3 text-sm">
+                                <span class="text-gray-400">-</span>
+                            </td>
+                            <td class="px-4 py-3 text-sm">
+                                <div class="flex space-x-2">
+                                    <button class="text-blue-600 hover:text-blue-800">
+                                        <span class="material-icons-outlined text-sm">visibility</span>
+                                    </button>
+                                    <button class="text-green-600 hover:text-green-800">
+                                        <span class="material-icons-outlined text-sm">download</span>
+                                    </button>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="hover:bg-gray-50">
+                            <td class="px-4 py-3 text-sm">
+                                <div class="flex items-center">
+                                    <span class="material-icons-outlined text-red-500 text-sm mr-2">picture_as_pdf</span>
+                                    <span class="font-medium text-gray-900">Manuale_HACCP_2024.pdf</span>
+                                </div>
+                            </td>
+                            <td class="px-4 py-3 text-sm">
+                                <span class="px-2 py-1 bg-green-100 text-green-800 rounded-full text-xs">HACCP</span>
+                            </td>
+                            <td class="px-4 py-3 text-sm text-gray-500">15/12/2024</td>
+                            <td class="px-4 py-3 text-sm">
+                                <span class="text-gray-400">-</span>
+                            </td>
+                            <td class="px-4 py-3 text-sm">
+                                <div class="flex space-x-2">
+                                    <button class="text-blue-600 hover:text-blue-800">
+                                        <span class="material-icons-outlined text-sm">visibility</span>
+                                    </button>
+                                    <button class="text-green-600 hover:text-green-800">
+                                        <span class="material-icons-outlined text-sm">download</span>
+                                    </button>
+                                    <button class="text-yellow-600 hover:text-yellow-800">
+                                        <span class="material-icons-outlined text-sm">edit</span>
+                                    </button>
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <!-- Sistema Accessi Multipli - Diagramma -->
+    <div class="bg-white rounded-xl shadow-md p-6 mt-8">
+        <h3 class="text-lg font-semibold text-gray-800 mb-6">Sistema Accessi Multi-utente Gerarchico</h3>
+
+        <div class="bg-gray-50 rounded-lg p-8">
+            <div class="flex flex-col items-center">
+                <!-- Livello 1: Admin Ru.di -->
+                <div class="bg-brand border-4 border-yellow-600 rounded-xl p-6 mb-8 shadow-lg">
+                    <div class="text-center">
+                        <span class="material-icons-outlined text-4xl text-gray-900 mb-2">admin_panel_settings</span>
+                        <h4 class="font-bold text-gray-900 text-lg">RU.DI SNC ADMIN</h4>
+                        <p class="text-sm text-gray-700">Gestione completa piattaforma</p>
+                    </div>
+                </div>
+
+                <div class="text-gray-400 mb-6">⬇️</div>
+
+                <!-- Livello 2: Clienti Aziendali -->
+                <div class="grid grid-cols-3 gap-8 mb-8">
+                    <div class="bg-white border-2 border-blue-400 rounded-lg p-4 shadow">
+                        <div class="text-center mb-3">
+                            <span class="material-icons-outlined text-3xl text-blue-600">business</span>
+                            <h5 class="font-semibold text-gray-900">Cliente 1</h5>
+                            <p class="text-xs text-gray-600">Ristorante Da Mario</p>
+                        </div>
+                        <div class="text-xs text-gray-600 space-y-1">
+                            <div>✓ Dashboard dipendenti</div>
+                            <div>✓ Gestione accessi</div>
+                            <div>✓ Documenti azienda</div>
+                        </div>
+                    </div>
+
+                    <div class="bg-white border-2 border-green-400 rounded-lg p-4 shadow">
+                        <div class="text-center mb-3">
+                            <span class="material-icons-outlined text-3xl text-green-600">business</span>
+                            <h5 class="font-semibold text-gray-900">Cliente 2</h5>
+                            <p class="text-xs text-gray-600">Bar Gelateria Sweet</p>
+                        </div>
+                        <div class="text-xs text-gray-600 space-y-1">
+                            <div>✓ Dashboard dipendenti</div>
+                            <div>✓ Gestione accessi</div>
+                            <div>✓ Documenti azienda</div>
+                        </div>
+                    </div>
+
+                    <div class="bg-white border-2 border-purple-400 rounded-lg p-4 shadow">
+                        <div class="text-center mb-3">
+                            <span class="material-icons-outlined text-3xl text-purple-600">business</span>
+                            <h5 class="font-semibold text-gray-900">Cliente N</h5>
+                            <p class="text-xs text-gray-600">Supermercato MaxiCoop</p>
+                        </div>
+                        <div class="text-xs text-gray-600 space-y-1">
+                            <div>✓ Dashboard dipendenti</div>
+                            <div>✓ Gestione accessi</div>
+                            <div>✓ Documenti azienda</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="text-gray-400 mb-6">⬇️</div>
+
+                <!-- Livello 3: Dipendenti -->
+                <div class="bg-white border-2 border-gray-300 rounded-lg p-6 shadow w-full max-w-2xl">
+                    <div class="text-center mb-4">
+                        <span class="material-icons-outlined text-3xl text-gray-600 mb-2">people</span>
+                        <h5 class="font-semibold text-gray-900">Dipendenti / Collaboratori</h5>
+                        <p class="text-sm text-gray-600">Accesso portale personale formazione</p>
+                    </div>
+                    <div class="grid grid-cols-2 gap-4 text-sm">
+                        <div class="bg-gray-50 p-3 rounded">
+                            <div class="font-medium text-gray-900 mb-1">✓ I Miei Corsi</div>
+                            <div class="text-xs text-gray-600">Fruizione video, quiz, progressi</div>
+                        </div>
+                        <div class="bg-gray-50 p-3 rounded">
+                            <div class="font-medium text-gray-900 mb-1">✓ I Miei Attestati</div>
+                            <div class="text-xs text-gray-600">Download PDF, scadenze</div>
+                        </div>
+                        <div class="bg-gray-50 p-3 rounded">
+                            <div class="font-medium text-gray-900 mb-1">✓ Notifiche</div>
+                            <div class="text-xs text-gray-600">Alert corsi, scadenze</div>
+                        </div>
+                        <div class="bg-gray-50 p-3 rounded">
+                            <div class="font-medium text-gray-900 mb-1">✓ Materiali</div>
+                            <div class="text-xs text-gray-600">PDF, slide, risorse</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Feature Highlights -->
+    <div class="grid grid-cols-3 gap-6 mt-8">
+        <div class="bg-white rounded-lg shadow p-4">
+            <div class="flex items-center space-x-2 mb-4">
+                <span class="material-icons-outlined text-[#FCD415]">school</span>
+                <h4 class="font-medium text-gray-900">LMS Completo</h4>
+            </div>
+            <p class="text-sm text-gray-600">
+                Sistema e-learning avanzato con video streaming, quiz interattivi, tracciamento certificato progressi e attestati digitali conformi normative settore.
+            </p>
+        </div>
+
+        <div class="bg-white rounded-lg shadow p-4">
+            <div class="flex items-center space-x-2 mb-4">
+                <span class="material-icons-outlined text-[#FCD415]">people</span>
+                <h4 class="font-medium text-gray-900">Accessi Multi-utente</h4>
+            </div>
+            <p class="text-sm text-gray-600">
+                Architettura gerarchica (Admin → Cliente → Dipendenti) con permessi granulari, dashboard personalizzate per ruolo e onboarding automatizzato.
+            </p>
+        </div>
+
+        <div class="bg-white rounded-lg shadow p-4">
+            <div class="flex items-center space-x-2 mb-4">
+                <span class="material-icons-outlined text-[#FCD415]">auto_awesome</span>
+                <h4 class="font-medium text-gray-900">Automazione Completa</h4>
+            </div>
+            <p class="text-sm text-gray-600">
+                Notifiche scadenze email/WhatsApp, generazione attestati PDF automatica, reportistica schedulata e integrazione marketing GiveMeHive.
+            </p>
+        </div>
+    </div>
+
+    <!-- Integrazione Marketing GiveMeHive -->
+    <div class="bg-gradient-to-r from-purple-50 to-blue-50 rounded-xl p-6 mt-8 border border-purple-200">
+        <h3 class="text-lg font-semibold text-gray-800 mb-4">🚀 Integrazione Marketing Automation GiveMeHive</h3>
+        <div class="grid grid-cols-3 gap-6">
+            <div>
+                <h4 class="font-medium text-purple-800 mb-2">📧 Email Marketing</h4>
+                <ul class="space-y-1 text-sm text-purple-700">
+                    <li>• Campagne scadenze attestati</li>
+                    <li>• Newsletter formative mensili</li>
+                    <li>• Promozioni corsi stagionali</li>
+                    <li>• Riattivazione clienti inattivi</li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="font-medium text-green-800 mb-2">💬 WhatsApp Marketing</h4>
+                <ul class="space-y-1 text-sm text-green-700">
+                    <li>• Notifiche scadenze imminenti</li>
+                    <li>• Promemoria corsi da completare</li>
+                    <li>• Conferme attestati emessi</li>
+                    <li>• Supporto rapido via chat</li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="font-medium text-blue-800 mb-2">📊 Pipeline CRM</h4>
+                <ul class="space-y-1 text-sm text-blue-700">
+                    <li>• Lead → Preventivo → Firma → Cliente</li>
+                    <li>• Upselling corsi avanzati</li>
+                    <li>• Cross-selling servizi consulenza</li>
+                    <li>• Reportistica commerciale unificata</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
